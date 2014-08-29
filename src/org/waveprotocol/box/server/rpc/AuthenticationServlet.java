@@ -28,12 +28,10 @@ import com.google.inject.name.Named;
 import org.eclipse.jetty.util.MultiMap;
 import org.eclipse.jetty.util.UrlEncoded;
 import org.waveprotocol.box.server.CoreSettings;
-import org.waveprotocol.box.server.account.HumanAccountDataImpl;
 import org.waveprotocol.box.server.authentication.HttpRequestBasedCallbackHandler;
 import org.waveprotocol.box.server.authentication.ParticipantPrincipal;
 import org.waveprotocol.box.server.authentication.SessionManager;
 import org.waveprotocol.box.server.persistence.AccountStore;
-import org.waveprotocol.box.server.persistence.PersistenceException;
 import org.waveprotocol.box.server.gxp.AuthenticationPage;
 import org.waveprotocol.box.server.robots.agent.welcome.WelcomeRobot;
 import org.waveprotocol.box.server.util.RegistrationUtil;
@@ -128,7 +126,6 @@ private final WelcomeRobot welcomeBot;
     this.analyticsAccount = analyticsAccount;
   }
 
-  @SuppressWarnings("unchecked")
   private LoginContext login(BufferedReader body) throws IOException, LoginException {
     try {
       Subject subject = new Subject();
