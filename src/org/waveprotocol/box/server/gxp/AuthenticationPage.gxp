@@ -180,6 +180,10 @@
     var responseType = <gxp:eval expr='responseType'/>;
     
     function init() {
+        var element = document.getElementById('welcome-data-include');
+        var url = element.textContent;
+        element.innerHTML="";
+        fragment(element, url);
         setFocus();
         handleResponse(responseType, message);
     }
@@ -197,13 +201,6 @@
             messageLbl.style.color = "red";
             messageLbl.innerHTML = message;
         }
-    }
-
-    window.onload = function() {
-        var element = document.getElementById('welcome-data-include');
-        var url = element.textContent;
-        element.innerHTML="";
-        fragment(element, url);
     }
   </script>
   </body>
