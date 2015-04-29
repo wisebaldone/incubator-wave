@@ -861,6 +861,10 @@
         <exclude name="gwt-unitCache/" />
         <exclude name="LICENSE.*" />
         <exclude name="NOTICE.*" />
+        <exclude name="*.log*" />
+        <exclude name="*.eml" />
+        <exclude name="*.iml" />
+        <exclude name="*.old" />
       </tarfileset>
       <!-- Setup permissions -->
       <tarfileset dir="." prefix="${release.src.path}" filemode="755">
@@ -912,6 +916,10 @@
         <include name="server.federation.config" />
         <include name="server.federation.config.example" />
         <include name="wiab-logging.conf" />
+        <exclude name="*.log*" />
+        <exclude name="*.eml" />
+        <exclude name="*.iml" />
+        <exclude name="*.old" />
       </tarfileset>
       <!-- Helper scripts -->
       <tarfileset dir="${basedir}" prefix="${release.bin.path}" filemode="755">
