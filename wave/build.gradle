@@ -58,7 +58,9 @@ dependencies {
 
     gwt(
             [group: "org.antlr", name: "antlr", version: "3.2"],
-            [group: "org.apache.velocity", name: "velocity", version: "1.6.3"]
+            [group: "org.apache.velocity", name: "velocity", version: "1.6.3"],
+            [group: "javax.validation", name: "validation-api", version: "1.1.0.Final"],
+            [group: "javax.validation", name: "validation-api", version: "1.1.0.Final", classifier: "sources"]
     )
     // compile
     compile (
@@ -281,6 +283,7 @@ task compileGwtDemo {
                 [
                         sourceSets.main.java.srcDirs,
                         sourceSets.main.compileClasspath,
+                        sourceSets.main.resources.srcDirs,
                         configurations.gwt
                 ]
             }
@@ -302,6 +305,7 @@ task compileGwtDev {
                 [
                         sourceSets.main.java.srcDirs,
                         sourceSets.main.compileClasspath,
+                        sourceSets.main.resources.srcDirs,
                         configurations.gwt
                 ]
             }
@@ -309,6 +313,7 @@ task compileGwtDev {
                     "-style", "PRETTY",
                     "-draftCompile",
                     "-ea",
+                    "-strict",
                     "org.waveprotocol.box.webclient.WebClientDev"
             ]
         }
@@ -558,6 +563,18 @@ task createDistZip(type: Zip) {
     from('war') {
         into 'apache-wave/war'
     }
+    from('../THANKS') {
+        into 'apache-wave'
+    }
+    from('../RELEASE-NOTES') {
+        into 'apache-wave'
+    }
+    from('../KEYS') {
+        into 'apache-wave'
+    }
+    from('../DISCLAIMER') {
+        into 'apache-wave'
+    }
 }
 
 task createDistTar(type: Tar) {
@@ -573,6 +590,18 @@ task createDistTar(type: Tar) {
     from('war') {
         into 'apache-wave/war'
     }
+    from('../THANKS') {
+        into 'apache-wave'
+    }
+    from('../RELEASE-NOTES') {
+        into 'apache-wave'
+    }
+    from('../KEYS') {
+        into 'apache-wave'
+    }
+    from('../DISCLAIMER') {
+        into 'apache-wave'
+    }
 }
 
 createDistZip.dependsOn jar, createPropertiesFile
@@ -581,10 +610,10 @@ createDistTar.dependsOn jar, createPropertiesFile
 task createDist() {
     doFirst {
         println ''
-        println '----------------------------------------------'
-        println '              Creating Deployment             '
-        println 'Zip and Tar files available in wave/build/dist'
-        println '----------------------------------------------'
+        println '--------------------------------------------------------'
+        println '                 Creating Deployment                    '
+        println 'Zip and Tar files available in wave/build/distributions.'
+        println '--------------------------------------------------------'
         println ''
     }
 }

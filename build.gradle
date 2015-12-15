@@ -26,12 +26,16 @@ subprojects {
     //apply plugin: 'checkstyle'
     sourceCompatibility = 1.7
     targetCompatibility = 1.7
+    test.ignoreFailures = true
 
     compileJava{
         options.incremental = true
     }
 
-    test.ignoreFailures = true
+    task sourcesJar(type: Jar, dependsOn: classes) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
 }
 
 project(':wave'){
@@ -75,3 +79,58 @@ rat.doFirst {
     println '----------------------------------------------'
     println ''
 }
+
+task createDistSourceZip(type: Zip) {
+    baseName = "apache-wave-source"
+    from('./') {
+        into 'apache-wave-src'
+    }
+    excludes = [
+            'apache-wave-src.zip',
+            'apache-wave-src.tar',
+            '.gradle/',
+            '.git/',
+            '.vagrant/',
+            '*/build/*',
+            '*/_*',
+            '*/gwt-unitCache/',
+            '*/*.iml',
+            '*/*.iws',
+            '*/*.ipr',
+            'reports/',
+    ]
+}
+
+task createDistSourceTar(type: Tar) {
+    baseName = "apache-wave-source"
+    from('./') {
+        into 'apache-wave-src'
+    }
+    excludes = [
+            'apache-wave-src.zip',
+            'apache-wave-src.tar',
+            '.gradle/',
+            '.git/',
+            '.vagrant/',
+            '*/build/*',
+            '*/_*',
+            '*/gwt-unitCache/',
+            '*/*.iml',
+            '*/*.iws',
+            '*/*.ipr',
+            'reports/',
+    ]
+}
+
+task createDistSource() {
+    doFirst {
+        println ''
+        println '--------------------------------------------------------'
+        println '             Creating Deployment Source                 '
+        println '    Zip and Tar files available in root directory.      '
+        println '--------------------------------------------------------'
+        println ''
+    }
+}
+
+createDistSource.dependsOn createDistSourceZip, createDistSourceTar

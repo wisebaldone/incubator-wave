@@ -87,16 +87,25 @@ Run Tasks:
 
 Distribution Tasks:
 - **jar**: builds jar file for the project.
+- **sourcesJar**: builds a source jar file for each project.
 - **createDist**: builds the zip and tar file for distribution.
 - **createDistZip**: builds the zip for distribution.
 - **createDistTar**: builds the tar for distribution.
+- **createDistSource**: builds the zip and tar file for distributing the source.
+- **createDistSourceZip**: builds the zip for distributing the source.
+- **createDistSourceTar**: builds the tar for distributing the source.
+
 
 Build
 -----
 
 To build the client and server:
-    gradle jar
+    `gradle jar`
 It will be created in wave/build/libs/wave-*version*.jar
+
+The sources can also be packaged into a jar by doing
+    `gradle sourcesJar`
+This will create a `project name`-sources.jar in each projects build/libs directory.
 
 Note: 
 
@@ -118,9 +127,10 @@ For example, to override wave\_server\_domain run:
 Take a look at the reference.conf to learn about configuration and possible/default values.
 
 The server can be started (on Linux/MacOS) by running  
-    ./run-server.sh  (currently disabled please use gradle method)  
+    ./run-server.sh 
 Or on Windows by running  
-    run-server.bat  (currently disabled please use gradle method)
+    run-server.bat
+    Note: must be cd'ed into the root directory
 Or, you can run the server from the compiled classes with Gradle:  
     gradle run  
 The web client will be accessible by default at http://localhost:9898/.
