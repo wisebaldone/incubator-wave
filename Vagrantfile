@@ -28,7 +28,7 @@ Vagrant.configure(2) do |config|
     config.vm.box = "ubuntu/trusty64"
     config.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'udp', auto_correct: true
     config.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'tcp', auto_correct: true
-    config.vm.provision :shell, path: "scripts/vagrant/dev.sh"
+    config.vm.provision :shell, path: "scripts/vagrant/setup-ubuntu.sh"
     config.vm.post_up_message = "Apache Wave Dev environment setup - dist in /opt/apache/wave"
 
     config.vm.provider "virtualbox" do |v|
@@ -42,7 +42,7 @@ Vagrant.configure(2) do |config|
     config.vm.box = "fedora/23-cloud-base"
     config.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'udp', auto_correct: true
     config.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'tcp', auto_correct: true
-    config.vm.provision :shell, path: "scripts/vagrant/dev.sh"
+    config.vm.provision :shell, path: "scripts/vagrant/setup-fedora.sh"
     config.vm.post_up_message = "Apache Wave Dev environment setup - dist in /opt/apache/wave"
 
     config.vm.provider "virtualbox" do |v|
@@ -52,45 +52,45 @@ Vagrant.configure(2) do |config|
     end
   end
 
-  config.vm.define "win7" do |win7|
-    config.vm.box = "modernIE/w7-ie11"
+  #config.vm.define "win7" do |win7|
+  #  config.vm.box = "modernIE/w7-ie11"
 
-    config.vm.provider "virtualbox" do |vb|
-      vb.name = "Apache Wave dev - Win7"
-      vb.customize ["modifyvm", :id, "--memory", "3064"]
-      vb.customize ["modifyvm", :id, "--vram", "128"]
-      vb.customize ["modifyvm", :id,  "--cpus", "2"]
-      vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
-      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-      vb.customize ["guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 10000]
-    end
-  end
+  #  config.vm.provider "virtualbox" do |vb|
+  #    vb.name = "Apache Wave dev - Win7"
+  #    vb.customize ["modifyvm", :id, "--memory", "3064"]
+  #    vb.customize ["modifyvm", :id, "--vram", "128"]
+  #    vb.customize ["modifyvm", :id,  "--cpus", "2"]
+  #    vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+  #    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  #    vb.customize ["guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 10000]
+  #  end
+  #end
 
-  config.vm.define "win8" do |win8|
-    config.vm.box = "modernIE/w8.1-ie11"
+  #config.vm.define "win8" do |win8|
+  #  config.vm.box = "modernIE/w8.1-ie11"
 
-    config.vm.provider "virtualbox" do |vb|
-      vb.name = "Apache Wave dev - Win8.1"
-      vb.customize ["modifyvm", :id, "--memory", "3064"]
-      vb.customize ["modifyvm", :id, "--vram", "128"]
-      vb.customize ["modifyvm", :id,  "--cpus", "2"]
-      vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
-      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-      vb.customize ["guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 10000]
-    end
-  end
+  #  config.vm.provider "virtualbox" do |vb|
+  #    vb.name = "Apache Wave dev - Win8.1"
+  #    vb.customize ["modifyvm", :id, "--memory", "3064"]
+  #    vb.customize ["modifyvm", :id, "--vram", "128"]
+  #    vb.customize ["modifyvm", :id,  "--cpus", "2"]
+  #    vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+  #    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  #    vb.customize ["guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 10000]
+  #  end
+  #end
 
-  config.vm.define "win10" do |win10|
-    config.vm.box = "modernIE/w10-edge"
+  #config.vm.define "win10" do |win10|
+  #  config.vm.box = "modernIE/w10-edge"
 
-    config.vm.provider "virtualbox" do |vb|
-      vb.name = "Apache Wave dev - Win10"
-      vb.customize ["modifyvm", :id, "--memory", "3064"]
-      vb.customize ["modifyvm", :id, "--vram", "128"]
-      vb.customize ["modifyvm", :id,  "--cpus", "2"]
-      vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
-      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-      vb.customize ["guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 10000]
-    end
-  end
+  #  config.vm.provider "virtualbox" do |vb|
+  #    vb.name = "Apache Wave dev - Win10"
+  #    vb.customize ["modifyvm", :id, "--memory", "3064"]
+  #    vb.customize ["modifyvm", :id, "--vram", "128"]
+  #    vb.customize ["modifyvm", :id,  "--cpus", "2"]
+  #    vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+  #    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  #    vb.customize ["guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 10000]
+  #  end
+  #end
 end
