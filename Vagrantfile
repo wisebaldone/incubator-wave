@@ -52,6 +52,8 @@ Vagrant.configure(2) do |config|
     end
   end
 
+  #todo(wisebaldone): enable windows development setups
+
   #config.vm.define "win7" do |win7|
   #  config.vm.box = "modernIE/w7-ie11"
 

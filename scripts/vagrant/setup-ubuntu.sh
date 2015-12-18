@@ -18,9 +18,7 @@
 # under the License.
 
 # install the dependencies
-add-apt-repository ppa:cwchien/gradle
-apt-get update
-apt-get install -y ant gradle openjdk-7-jdk mongodb-org
+apt-get install -y ant openjdk-7-jdk mongodb-org
 # create install location
 cd /opt
 sudo mkdir apache
@@ -28,7 +26,7 @@ cd apache
 sudo mkdir wave
 # create the binary
 cd /vagrant
-gradle createDist
+./gradlew createDist
 # extract dist
-cd wave/build/distributions
-sudo tar -C /opt/apache/wave -xvf wave-0.4.tar
+cd distributions
+sudo tar -C /opt/apache/wave -xvf apache-wave-bin-0.4.tar
