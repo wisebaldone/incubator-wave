@@ -221,6 +221,8 @@ task generateMessages {
     }
 }
 
+generateMessages.dependsOn ":pst:jar"
+
 task generateGXP {
     description = 'Generate source files from GXP prototypes'
     FileTree inputFiles = fileTree(dir: 'src/main/gxp', include: '**/*.gxp')
