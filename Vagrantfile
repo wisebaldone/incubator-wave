@@ -25,13 +25,13 @@
 Vagrant.configure(2) do |config|
 
   config.vm.define "ubuntu" do |ubuntu|
-    config.vm.box = "ubuntu/trusty64"
-    config.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'udp', auto_correct: true
-    config.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'tcp', auto_correct: true
-    config.vm.provision :shell, path: "scripts/vagrant/setup-ubuntu.sh"
-    config.vm.post_up_message = "Apache Wave Dev environment setup - dist in /opt/apache/wave"
+    ubuntu.vm.box = "ubuntu/trusty64"
+    ubuntu.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'udp', auto_correct: true
+    ubuntu.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'tcp', auto_correct: true
+    ubuntu.vm.provision :shell, path: "scripts/vagrant/setup-ubuntu.sh"
+    ubuntu.vm.post_up_message = "Apache Wave Dev environment setup - dist in /opt/apache/wave"
 
-    config.vm.provider "virtualbox" do |v|
+    ubuntu.vm.provider "virtualbox" do |v|
       v.name = "Apache Wave dev - Ubuntu"
       v.memory = 2048
       v.cpus = 1
@@ -39,13 +39,13 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define "fedora" do |fedora|
-    config.vm.box = "fedora/23-cloud-base"
-    config.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'udp', auto_correct: true
-    config.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'tcp', auto_correct: true
-    config.vm.provision :shell, path: "scripts/vagrant/setup-fedora.sh"
-    config.vm.post_up_message = "Apache Wave Dev environment setup - dist in /opt/apache/wave"
+    fedora.vm.box = "fedora/23-cloud-base"
+    fedora.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'udp', auto_correct: true
+    fedora.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'tcp', auto_correct: true
+    fedora.vm.provision :shell, path: "scripts/vagrant/setup-fedora.sh"
+    fedora.vm.post_up_message = "Apache Wave Dev environment setup - dist in /opt/apache/wave"
 
-    config.vm.provider "virtualbox" do |v|
+    fedora.vm.provider "virtualbox" do |v|
       v.name = "Apache Wave dev - Fedora"
       v.memory = 2048
       v.cpus = 1

@@ -18,6 +18,9 @@
 # under the License.
 
 # install the dependencies
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+apt-get update
 apt-get install -y ant openjdk-7-jdk mongodb-org
 # create install location
 cd /opt
@@ -26,7 +29,8 @@ cd apache
 sudo mkdir wave
 # create the binary
 cd /vagrant
-./gradlew createDist
-# extract dist
+./gradlew clean createDist
 cd distributions
 sudo tar -C /opt/apache/wave -xvf apache-wave-bin-0.4.tar
+cd ..
+cp scripts/vagrant/application.conf /opt/apache/wave/apache-wave/config/application.conf
