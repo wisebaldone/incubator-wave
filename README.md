@@ -75,7 +75,7 @@ in the Gradle Tasks section within the vm.
 The virtual machine will make a copy of the current source into the users
 documents folder under Apache-Wave. Running the vagrant up command again will
 update this folder. The standard config for vagrant testing can be located at
-`scripts/vagrant/application.conf`, just copy this folder to the location
+`scripts/vagrant/application.conf`, just copy this file to the location
 of the distributions config folder.
 
 ### Note
