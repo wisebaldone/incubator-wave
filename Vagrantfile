@@ -54,6 +54,13 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "win10" do |win10|
     win10.vm.box = "modernIE/w10-edge"
+    win10.vm.guest = :windows
+
+    win10.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'udp', auto_correct: true
+    win10.vm.network "forwarded_port", guest: 9898, host: 9898, protocol: 'tcp', auto_correct: true
+
+    win10.vm.provision :shell, path: "scripts/vagrant/setup-win-choco.cmd"
+    win10.vm.provision :shell, path: "scripts/vagrant/setup-win.cmd"
 
     win10.vm.provider "virtualbox" do |vb|
       vb.name = "Apache Wave dev - Win10"
