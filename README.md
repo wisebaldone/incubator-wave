@@ -2,10 +2,10 @@
 
 The Apache Wave project is a stand alone wave server and rich web client
 that serves as a Wave reference implementation.
-Apache Wave site: http://incubator.apache.org/wave/.  
+Apache Wave site: http://incubator.apache.org/wave/.
 This project lets developers and enterprise users run wave servers and
 host waves on their own hardware. And then share those waves with other
-wave servers.  
+wave servers.
 
 ## Cryptographic Software Notice
 
@@ -36,10 +36,10 @@ software:
 
 ## Run Binary
 
-The nightly binaries can be downloaded from https://builds.apache.org/view/S-Z/view/Wave/job/wave-artifacts/lastSuccessfulBuild/artifact/.  
-The latest "dev" releases can be downloaded from: https://dist.apache.org/repos/dist/dev/incubator/wave/.  
-The latest officially released binaries can be downloaded from: https://dist.apache.org/repos/dist/release/incubator/wave/.  
-Extract the archive and execute run-server.sh for Linux/Mac or run-server.bat for Windows.   
+The nightly binaries can be downloaded from https://builds.apache.org/view/S-Z/view/Wave/job/wave-artifacts/lastSuccessfulBuild/artifact/.
+The latest "dev" releases can be downloaded from: https://dist.apache.org/repos/dist/dev/incubator/wave/.
+The latest officially released binaries can be downloaded from: https://dist.apache.org/repos/dist/release/incubator/wave/.
+Extract the archive and execute run-server.sh for Linux/Mac or run-server.bat for Windows.
 The web client will be accessible by default at http://localhost:9898/.
 
 ## Setup with Vagrant
@@ -48,13 +48,13 @@ A vagrant setup has been provided for automatic compile on a Ubuntu or Fedora
 linux box. A windows box is also provided for testing but only installs requirements,
 compilation and setup of the server require manual setup.
 
-Note: requires vagrant and virtual box to be installed and an internet 
+Note: requires vagrant and virtual box to be installed and an internet
 connection.
 
 ### Ubuntu & Fedora ( recommended )
 
 running `vagrant up ubuntu` or `vagrant up fedora` will create a linux box
-where the project will be compiled and dist installed to `/opt/apache/wave`. In 
+where the project will be compiled and dist installed to `/opt/apache/wave`. In
 this folder you can find the current dist source and run the server. A server
 config file has been provided to allow the server to be accessible outside the
 vm listening on `0.0.0.0:9898`.
@@ -63,8 +63,8 @@ To update the dist just run `vagrant up linux` where linux is either ubuntu or
 fedora.
 
 note:
-`vagrant ssh linux` where linux is either ubuntu or fedora can be used for a 
-ssh session. 
+`vagrant ssh linux` where linux is either ubuntu or fedora can be used for a
+ssh session.
 
 ### Windows 10
 
@@ -145,40 +145,40 @@ The sources can also be packaged into a jar by doing
     `./gradlew sourcesJar`
 This will create a `project name`-sources.jar in each projects build/libs directory.
 
-Note: 
+Note:
 
 - if pst-`version`.jar is unable to be found run `./gradlew pst:jar` then retry.
-- if a jar is unable to be unzipped with wave:extractApi then delete the jar from your cache and try again. 
+- if a jar is unable to be unzipped with wave:extractApi then delete the jar from your cache and try again.
     You may need to restart. If problem persists let the newsgroup know or create an issue on Jira.
 
-To config your server a default configuration is provided by reference.conf, 
+To config your server a default configuration is provided by reference.conf,
 this can be overwritten by application.conf with custom values.
 
 To enable federation the following must be run.
 
-To create a simple configuration run:  
-    `./gradlew prosody-config`  
+To create a simple configuration run:
+    `./gradlew prosody-config`
 
-To override default values pass them to the ant script. 
-For example, to override wave\_server\_domain run:  
-`./gradlew prosody-config -Dwave_server_domain=example.com`  
+To override default values pass them to the ant script.
+For example, to override wave\_server\_domain run:
+`./gradlew prosody-config -Dwave_server_domain=example.com`
 Take a look at the reference.conf to learn about configuration and possible/default values.
 
-The server can be started (on Linux/MacOS) by running  
-    ./run-server.sh 
-Or on Windows by running  
+The server can be started (on Linux/MacOS) by running
+    ./run-server.sh
+Or on Windows by running
     run-server.bat
     Note: must be cd'ed into the root directory
-Or, you can run the server from the compiled classes with Gradle:  
-    gradle run  
+Or, you can run the server from the compiled classes with Gradle:
+    gradle run
 The web client will be accessible by default at http://localhost:9898/.
 
 
-## To learn more about Wave in a Box and Wave Federation Protocol:   
+## To learn more about Wave in a Box and Wave Federation Protocol:
 
-1. Subscribe to the wave-dev mailing list, find instructions at http://incubator.apache.org/wave/mailing-lists.html.  
+1. Subscribe to the wave-dev mailing list, find instructions at http://incubator.apache.org/wave/mailing-lists.html.
 2. Visit the Apache Wave wiki at https://cwiki.apache.org/confluence/display/WAVE/Home.
-3. Look at the white papers folder - the information is a bit old but still usable.   
+3. Look at the white papers folder - the information is a bit old but still usable.
 4. Watch the Wave Summit videos on YouTube, find the links at: https://cwiki.apache.org/confluence/display/WAVE/Wave+Summit+Talks
 
 
@@ -206,22 +206,22 @@ You can get your CA's certficate from their website, though note they might prov
 Users will be automatically logged in when they access the site, with the
 username taken from the email address in their certificate.
 
-Setting up third party optional dependencies:   
+Setting up third party optional dependencies:
 
 ## To enable MongoDB:
 
-In order to specify MongoDB in server.config as the storage option for storing deltas, accounts and attachments - you need to install according to instructions at: http://www.mongodb.org/downloads.  
-Or on Ubuntu Linux you can use the following command:  
+In order to specify MongoDB in server.config as the storage option for storing deltas, accounts and attachments - you need to install according to instructions at: http://www.mongodb.org/downloads.
+Or on Ubuntu Linux you can use the following command:
     sudo apt-get install mongodb-org
 
 ## To enable Solr (Currently Disabled):
 
-In order to specify Solr in server.config as the search type - you need to install Solr according to instructions at: http://www.apache.org/dyn/closer.cgi/lucene/solr/4.9.1.  
-Or, you can use built in Ant script, i.e. run:  
-    ant get-third-party-solr-dep  
-This will download and unzip the Solr distribution into third_party/solr folder.  
-You can then run the Solr server with:  
-    run-solr.sh  
-for Linux/Mac or:  
-    run-solr.bat  
-for Windows.  
+In order to specify Solr in server.config as the search type - you need to install Solr according to instructions at: http://www.apache.org/dyn/closer.cgi/lucene/solr/4.9.1.
+Or, you can use built in Ant script, i.e. run:
+    ant get-third-party-solr-dep
+This will download and unzip the Solr distribution into third_party/solr folder.
+You can then run the Solr server with:
+    run-solr.sh
+for Linux/Mac or:
+    run-solr.bat
+for Windows.
