@@ -20,8 +20,12 @@
 # install the dependencies
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+sudo add-apt-repository ppa:openjdk-r/ppa
 apt-get update
-apt-get install -y ant openjdk-7-jdk mongodb-org
+apt-get install -y ant openjdk-8-jdk mongodb-org
+# set jdk version
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+export JAVA_HOME
 # create install location
 cd /opt
 sudo mkdir apache

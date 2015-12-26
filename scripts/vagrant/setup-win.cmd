@@ -15,5 +15,5 @@
 :: specific language governing permissions and limitations
 :: under the License.
 
-choco install ant jdk7 mongodb -my
+choco install ant jdk8 mongodb -my
 xcopy c:\vagrant C:\Users\IEUser\Documents\Apache-Wave /IYS

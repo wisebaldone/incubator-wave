@@ -29,7 +29,7 @@ cd /vagrant
 ./gradlew clean createDist
 
 # Get Apache Wave version
-WAVE_VERSION=`sed "s/[\\t ]*=[\\t ]*/=/g" config/wave.conf | grep ^version= | cut -f2 -d=`
+WAVE_VERSION=`sed "s/[\\t ]*=[\\t ]*/=/g" wave/config/wave.conf | grep ^version= | cut -f2 -d=`
 
 cd distributions
 sudo tar -C /opt/apache/wave -xvf apache-wave-bin-$WAVE_VERSION.tar

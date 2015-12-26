@@ -48,8 +48,12 @@ A vagrant setup has been provided for automatic compile on a Ubuntu or Fedora
 linux box. A windows box is also provided for testing but only installs requirements,
 compilation and setup of the server require manual setup.
 
-Note: requires vagrant and virtual box to be installed and an internet
+Note: 
+
+- requires vagrant and virtual box to be installed and an internet
 connection.
+- these images use jdk v8 which isn't officially supported but is used to test
+for future compatibility.
 
 ### Ubuntu & Fedora ( recommended )
 
@@ -66,7 +70,7 @@ note:
 `vagrant ssh linux` where linux is either ubuntu or fedora can be used for a
 ssh session.
 
-### Windows 10
+### Windows 10 (requires vagrant 1.8+)
 
 running `vagrant up win10` will setup a windows 10 environment for Apache Wave,
 this vm does not setup a dist but that can be done by following the steps below
