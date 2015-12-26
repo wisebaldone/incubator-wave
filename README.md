@@ -48,7 +48,7 @@ A vagrant setup has been provided for automatic compile on a Ubuntu or Fedora
 linux box. A windows box is also provided for testing but only installs requirements,
 compilation and setup of the server require manual setup.
 
-Note: 
+Note:
 
 - requires vagrant and virtual box to be installed and an internet
 connection.
