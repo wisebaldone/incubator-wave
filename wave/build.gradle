@@ -150,7 +150,8 @@ dependencies {
             [group: "com.google.inject.extensions", name: "guice-assistedinject", version: "3.0"],              // [?, ?]
             [group: "com.google.inject.extensions", name: "guice-servlet", version: "3.0"],                     // [?, ?]
             [group: "com.google.inject", name: "guice", version: "3.0"],                                        // [?, ?]
-            [group: "com.google.protobuf", name: "protobuf-java", version: "2.6.1"],                            // [?, ?]
+            [group: "com.google.protobuf", name: "protobuf-java", version: "3.1.0"],                            // [?, ?]
+            [group: "com.google.protobuf", name: "protobuf-java-util", version: "3.1.0"],                            // [?, ?]
             [group: "com.googlecode.protobuf-java-format", name: "protobuf-java-format", version: "1.2"],       // [?, ?]
             [group: "com.typesafe", name: "config", version: "1.2.1"],                                          // [?, ?]
             [group: "dom4j", name: "dom4j", version: "1.6.1"],                                                  // [?, ?]
@@ -205,7 +206,7 @@ dependencies {
         [group: "com.google.gxp", name: "google-gxp", version: "0.2.4-beta"]                                    // [?, ?]
     )
     protoCompile (
-        [group: "com.google.protobuf", name: "protobuf-java", version: "2.6.1"],                                // [?, ?]
+        [group: "com.google.protobuf", name: "protobuf-java", version: "3.1.0"],                                // [?, ?]
         fileTree(dir: '../pst/build/libs', include: '**/*.jar')                                                 // [?, ?]
     )
     generateMessages (
@@ -233,7 +234,7 @@ dependencies {
 //=============================================================================
 protobuf {
     protoc {
-        artifact = 'com.google.protobuf:protoc:2.6.1'
+        artifact = 'com.google.protobuf:protoc:3.1.0'
     }
     generatedFilesBaseDir = "$projectDir/generated"
 }
