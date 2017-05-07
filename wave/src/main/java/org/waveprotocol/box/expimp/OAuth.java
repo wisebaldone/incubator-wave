@@ -40,8 +40,8 @@ public class OAuth {
   private static final String ACCESS_URL_POSTFIX = "/robot/dataapi/oauth/OAuthGetAccessToken";
   private static final String GET_ALL_TOKENS_URL_POSTFIX = "/robot/dataapi/oauth/OAuthGetAllTokens";
 
-  private static final String DATA_API_RPC_URL_POSTFIX = "/robot/dataapi/rpc";
-  private static final String ROBOT_RPC_URL_POSTFIX = "/robot/rpc";
+  private static final String DATA_API_RPC_URL_POSTFIX = "/robot/dataapi/endpoints";
+  private static final String ROBOT_RPC_URL_POSTFIX = "/robot/endpoints";
 
   private static final String THREE_LEGGED_API_CONSUMER_KEY = "anonymous";
   private static final String THREE_LEGGED_API_CONSUMER_SECRET = "anonymous";

@@ -45,7 +45,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * {@link HttpServlet} that serves as the endpoint for the Data Api.
+ * {@link HttpServlet} that serves as the endpoints for the Data Api.
  *
  * @author ljvderijk@google.com (Lennard de Rijk)
  */

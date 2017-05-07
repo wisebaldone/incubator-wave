@@ -143,7 +143,7 @@ public final class ProtoSerializer {
   /** Adds the known proto types. */
   private void init() {
     // Note: this list is too inclusive, but has historically always been so.
-    // The real list only needs about 5 protos, since only top-level rpc types
+    // The real list only needs about 5 protos, since only top-level endpoints types
     // need to be here, not every single recursively reachable proto.
     add(ProtocolAuthenticate.class, ProtocolAuthenticateProtoImpl.class);
     add(ProtocolAuthenticationResult.class, ProtocolAuthenticationResultProtoImpl.class);

@@ -293,9 +293,9 @@ public class WaveService {
   private static final String UTF_8 = "UTF-8";
 
   /** Wave RPC URLs. */
-  public static final String RPC_URL = "https://www-opensocial.googleusercontent.com/api/rpc";
+  public static final String RPC_URL = "https://www-opensocial.googleusercontent.com/api/endpoints";
   public static final String SANDBOX_RPC_URL =
-      "https://www-opensocial-sandbox.googleusercontent.com/api/rpc";
+      "https://www-opensocial-sandbox.googleusercontent.com/api/endpoints";
 
   private static final Logger LOG = Logger.getLogger(WaveService.class.getName());
 
@@ -380,10 +380,10 @@ public class WaveService {
    *
    * <p>
    * Performing the OAuth dance is not part of this interface - once you've done
-   * the dance, pass the constructed accessor and rpc endpoint into this method.
+   * the dance, pass the constructed accessor and endpoints endpoints into this method.
    *
    * <p>
-   * Ensure that the endpoint URL you pass in matches exactly the URL used to
+   * Ensure that the endpoints URL you pass in matches exactly the URL used to
    * request an access token (including https vs http).
    *
    *  For the rpcServerUrl you can use:
@@ -396,7 +396,7 @@ public class WaveService {
    * </ul>
    *
    * @param accessor the {@code OAuthAccessor} with access token and secret
-   * @param rpcServerUrl the endpoint URL of the server that serves the JSON-RPC
+   * @param rpcServerUrl the endpoints URL of the server that serves the JSON-RPC
    *        request.
    */
   public void setupOAuth(OAuthAccessor accessor, String rpcServerUrl) {

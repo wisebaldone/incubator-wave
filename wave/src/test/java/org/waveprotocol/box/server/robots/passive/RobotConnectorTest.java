@@ -71,7 +71,7 @@ public class RobotConnectorTest extends TestCase {
           true);
 
   private static final EventMessageBundle BUNDLE =
-      new EventMessageBundle(ROBOT_ACCOUNT_NAME, "www.example.com/rpc");
+      new EventMessageBundle(ROBOT_ACCOUNT_NAME, "www.example.com/endpoints");
   private static final String SERIALIZED_BUNDLE = "BUNDLE";
   private static final String RETURNED_OPERATION = "OPERATION";
 

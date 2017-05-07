@@ -149,10 +149,10 @@ public class AbstractRobotTest extends TestCase {
 
 
     MockRobot robot = new MockRobot();
-    robot.setupOAuth("consumerKey", "consumerSecret", "http://gmodules.com/api/rpc");
+    robot.setupOAuth("consumerKey", "consumerSecret", "http://gmodules.com/api/endpoints");
 
     WaveService service = new WaveService(fetcher, robot.computeHash());
-    service.setupOAuth("consumerKey", "consumerSecret", "http://gmodules.com/api/rpc");
+    service.setupOAuth("consumerKey", "consumerSecret", "http://gmodules.com/api/endpoints");
 
     OperationQueue opQueue = new OperationQueue();
     opQueue.appendOperation(OperationType.ROBOT_NOTIFY,
@@ -161,7 +161,7 @@ public class AbstractRobotTest extends TestCase {
     when(wavelet.getOperationQueue()).thenReturn(opQueue);
 
     assertEquals(1, opQueue.getPendingOperations().size());
-    robot.submit(wavelet, "http://gmodules.com/api/rpc", service);
+    robot.submit(wavelet, "http://gmodules.com/api/endpoints", service);
     assertEquals(0, opQueue.getPendingOperations().size());
     verify(fetcher, times(1)).execute(any(HttpMessage.class), anyMapOf(String.class, Object.class));
   }
@@ -266,7 +266,7 @@ public class AbstractRobotTest extends TestCase {
     WaveletTagsChangedEvent event3 = new WaveletTagsChangedEvent(null, null, "foo@test.com", 1l,
         "blip1");
 
-    EventMessageBundle bundle = new EventMessageBundle("Foo", "http://gmodules.com/api/rpc");
+    EventMessageBundle bundle = new EventMessageBundle("Foo", "http://gmodules.com/api/endpoints");
     bundle.addEvent(event1);
     bundle.addEvent(event2);
     bundle.addEvent(event3);

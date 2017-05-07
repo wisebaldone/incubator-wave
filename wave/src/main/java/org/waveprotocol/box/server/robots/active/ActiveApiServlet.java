@@ -51,7 +51,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * {@link HttpServlet} that serves as the endpoint for the Active Api.
+ * {@link HttpServlet} that serves as the endpoints for the Active Api.
  *
  * @author ljvderijk@google.com (Lennard de Rijk)
  */

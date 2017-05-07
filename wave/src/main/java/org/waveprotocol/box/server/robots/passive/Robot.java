@@ -55,10 +55,10 @@ import java.util.Map.Entry;
 public class Robot implements Runnable {
 
   private static final Log LOG = Log.get(Robot.class);
-  /** Appended to the robot url which forms the endpoint for sending rpc calls */
+  /** Appended to the robot url which forms the endpoints for sending endpoints calls */
   public static final String RPC_URL = "/_wave/robot/jsonrpc";
   /**
-   * Appended to the robot url which forms the endpoint for getting the
+   * Appended to the robot url which forms the endpoints for getting the
    * capabilities
    */
   public static final String CAPABILITIES_URL = "/_wave/capabilities.xml";

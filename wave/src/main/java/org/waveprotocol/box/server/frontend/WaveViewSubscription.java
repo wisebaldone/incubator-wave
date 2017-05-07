@@ -50,7 +50,7 @@ import java.util.logging.Logger;
 final class WaveViewSubscription {
 
   /**
-   * State of a wavelet endpoint.
+   * State of a wavelet endpoints.
    */
   private static final class WaveletChannelState {
     /**

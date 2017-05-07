@@ -26,7 +26,6 @@ import com.google.protobuf.InvalidProtocolBufferException;
 
 import org.waveprotocol.box.server.persistence.PersistenceException;
 import org.waveprotocol.box.server.persistence.protos.ProtoDeltaStoreDataSerializer;
-import org.waveprotocol.box.server.persistence.protos.ProtoDeltaStoreData.ProtoTransformedWaveletDelta;
 import org.waveprotocol.box.server.shutdown.LifeCycle;
 import org.waveprotocol.box.server.shutdown.ShutdownPriority;
 import org.waveprotocol.box.server.shutdown.Shutdownable;
@@ -34,7 +33,6 @@ import org.waveprotocol.box.server.waveserver.AppliedDeltaUtil;
 import org.waveprotocol.box.server.waveserver.ByteStringMessage;
 import org.waveprotocol.box.server.waveserver.WaveletDeltaRecord;
 import org.waveprotocol.box.server.waveserver.DeltaStore.DeltasAccess;
-import org.waveprotocol.wave.federation.Proto.ProtocolAppliedWaveletDelta;
 import org.waveprotocol.wave.model.id.WaveletName;
 import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
 import org.waveprotocol.wave.model.util.Pair;

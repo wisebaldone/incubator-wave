@@ -82,7 +82,7 @@ public class WelcomeRobot extends AbstractBaseRobotAgent {
   public void greet(ParticipantId id) throws IOException {
     Preconditions.checkNotNull(id);
     RobotAccountData account = null;
-    String rpcUrl = getFrontEndAddress() + "/robot/rpc";
+    String rpcUrl = getFrontEndAddress() + "/robot/endpoints";
     try {
       account =
         getAccountStore()

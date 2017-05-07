@@ -384,7 +384,7 @@ public class ViewChannelImplTest extends TestCase {
 
   /**
    * Tests that {@link ViewChannelImpl#open(Listener, IdFilter, Map)}
-   * synchronously calls the ViewOpen rpc on its wave service.
+   * synchronously calls the ViewOpen endpoints on its wave service.
    */
   public void testOpenIssuesViewOpenRpc() {
     open();
@@ -491,7 +491,7 @@ public class ViewChannelImplTest extends TestCase {
   }
 
   /**
-   * Tests that closing the channel after a full open issues a ViewClose rpc.
+   * Tests that closing the channel after a full open issues a ViewClose endpoints.
    */
   public void testCloseAfterChannelIdCallsCloseRpc() {
     open();
@@ -502,7 +502,7 @@ public class ViewChannelImplTest extends TestCase {
 
   /**
    * Tests that closing the channel before the server has responded with a
-   * channel id does not issue a ViewClose rpc.
+   * channel id does not issue a ViewClose endpoints.
    */
   public void testCloseWithoutChannelIdDoesNotCallCloseRpc() {
     halfOpen();
@@ -512,7 +512,7 @@ public class ViewChannelImplTest extends TestCase {
 
   /**
    * Tests that closing the channel before the server has responded with a
-   * channel id causes a ViewClose rpc to be sent as soon as a channel id
+   * channel id causes a ViewClose endpoints to be sent as soon as a channel id
    * arrives later.
    */
   public void testCloseWithoutChannelIdCallsCloseRpcIfChannelIdArrives() {
@@ -552,7 +552,7 @@ public class ViewChannelImplTest extends TestCase {
     viewOpenListener.clear();
     close();
 
-    // The service should cause the open rpc to terminate successfully.
+    // The service should cause the open endpoints to terminate successfully.
     terminateOpenRpcWithSuccess();
     viewOpenListener.expectedCall(MockViewChannelListener.MethodCall.ON_CLOSED);
   }
@@ -611,7 +611,7 @@ public class ViewChannelImplTest extends TestCase {
   }
 
   /**
-   * Tests that a failure of a ViewSubmit rpc causes the channel to call the
+   * Tests that a failure of a ViewSubmit endpoints causes the channel to call the
    * failure callback registered on delta submission.
    */
   public void testDeltaSubmissionFailureCallsSubmissionFailureCallback() {

@@ -25,15 +25,10 @@ import com.google.inject.name.Names;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 import org.apache.commons.configuration.ConfigurationException;
-import org.apache.wave.box.server.rpc.InitialsAvatarsServlet;
-import org.waveprotocol.box.common.comms.WaveClientRpc.ProtocolWaveClientRpc;
+import org.apache.wave.server.endpoints.AvatarsServlet;
 import org.waveprotocol.box.server.authentication.AccountStoreHolder;
 import org.waveprotocol.box.server.authentication.SessionManager;
 import org.waveprotocol.box.server.executor.ExecutorsModule;
-import org.waveprotocol.box.server.frontend.ClientFrontend;
-import org.waveprotocol.box.server.frontend.ClientFrontendImpl;
-import org.waveprotocol.box.server.frontend.WaveClientRpcImpl;
-import org.waveprotocol.box.server.frontend.WaveletInfo;
 import org.waveprotocol.box.server.persistence.AccountStore;
 import org.waveprotocol.box.server.persistence.PersistenceException;
 import org.waveprotocol.box.server.persistence.PersistenceModule;
@@ -59,9 +54,6 @@ import org.waveprotocol.box.server.stat.TimingFilter;
 import org.waveprotocol.box.server.waveserver.*;
 import org.waveprotocol.box.stat.StatService;
 import org.waveprotocol.wave.crypto.CertPathStore;
-import org.waveprotocol.wave.federation.FederationTransport;
-import org.waveprotocol.wave.federation.noop.NoOpFederationModule;
-import org.waveprotocol.wave.model.version.HashedVersionFactory;
 import org.waveprotocol.wave.model.wave.ParticipantIdUtil;
 import org.waveprotocol.wave.util.logging.Log;
 
@@ -109,13 +101,12 @@ public class ServerMain {
     Config config = injector.getInstance(Config.class);
 
     Module serverModule = injector.getInstance(ServerModule.class);
-    Module federationModule = buildFederationModule(injector);
     Module robotApiModule = new RobotApiModule();
     PersistenceModule persistenceModule = injector.getInstance(PersistenceModule.class);
     Module searchModule = injector.getInstance(SearchModule.class);
     Module profileFetcherModule = injector.getInstance(ProfileFetcherModule.class);
     injector = injector.createChildInjector(serverModule, persistenceModule, robotApiModule,
-        federationModule, searchModule, profileFetcherModule);
+        searchModule, profileFetcherModule);
 
     ServerRpcProvider server = injector.getInstance(ServerRpcProvider.class);
     WaveBus waveBus = injector.getInstance(WaveBus.class);
@@ -129,18 +120,11 @@ public class ServerMain {
     initializeServlets(server, config);
     initializeRobotAgents(server);
     initializeRobots(injector, waveBus);
-    initializeFrontend(injector, server, waveBus);
-    initializeFederation(injector);
     initializeSearch(injector, waveBus);
     initializeShutdownHandler(server);
 
     LOG.info("Starting server");
     server.startWebSocketServer(injector);
-  }
-
-  private static Module buildFederationModule(Injector settingsInjector)
-      throws ConfigurationException {
-    return settingsInjector.getInstance(NoOpFederationModule.class);
   }
 
   private static void initializeServer(Injector injector, String waveDomain)
@@ -178,12 +162,12 @@ public class ServerMain {
 
     server.addServlet("/robot/dataapi", DataApiServlet.class);
     server.addServlet(DataApiOAuthServlet.DATA_API_OAUTH_PATH + "/*", DataApiOAuthServlet.class);
-    server.addServlet("/robot/dataapi/rpc", DataApiServlet.class);
+    server.addServlet("/robot/dataapi/endpoints", DataApiServlet.class);
     server.addServlet("/robot/register/*", RobotRegistrationServlet.class);
-    server.addServlet("/robot/rpc", ActiveApiServlet.class);
+    server.addServlet("/robot/endpoints", ActiveApiServlet.class);
     server.addServlet("/webclient/remote_logging", RemoteLoggingServiceImpl.class);
     server.addServlet("/profile/*", FetchProfilesServlet.class);
-    server.addServlet("/iniavatars/*", InitialsAvatarsServlet.class);
+    server.addServlet("/iniavatars/*", AvatarsServlet.class);
     server.addServlet("/waveref/*", WaveRefServlet.class);
 
     String gadgetServerHostname = config.getString("core.gadget_server_hostname");
@@ -213,24 +197,6 @@ public class ServerMain {
     server.addServlet(PasswordAdminRobot.ROBOT_URI + "/*", PasswordAdminRobot.class);
     server.addServlet(WelcomeRobot.ROBOT_URI + "/*", WelcomeRobot.class);
     server.addServlet(RegistrationRobot.ROBOT_URI + "/*", RegistrationRobot.class);
-  }
-
-  private static void initializeFrontend(Injector injector, ServerRpcProvider server,
-      WaveBus waveBus) throws WaveServerException {
-    HashedVersionFactory hashFactory = injector.getInstance(HashedVersionFactory.class);
-
-    WaveletProvider provider = injector.getInstance(WaveletProvider.class);
-    WaveletInfo waveletInfo = WaveletInfo.create(hashFactory, provider);
-    ClientFrontend frontend =
-        ClientFrontendImpl.create(provider, waveBus, waveletInfo);
-
-    ProtocolWaveClientRpc.Interface rpcImpl = WaveClientRpcImpl.create(frontend, false);
-    server.registerService(ProtocolWaveClientRpc.newReflectiveService(rpcImpl));
-  }
-
-  private static void initializeFederation(Injector injector) {
-    FederationTransport federationManager = injector.getInstance(FederationTransport.class);
-    federationManager.startFederation();
   }
 
   private static void initializeSearch(Injector injector, WaveBus waveBus)
