@@ -62,8 +62,8 @@ import org.waveprotocol.box.server.persistence.file.FileUtils;
 import org.waveprotocol.box.server.util.NetUtils;
 import org.waveprotocol.box.stat.Timer;
 import org.waveprotocol.box.stat.Timing;
-import org.waveprotocol.wave.model.util.Pair;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.util.Pair;
+import org.apache.wave.server.model.wave.ParticipantId;
 import org.waveprotocol.wave.util.logging.Log;
 
 import com.google.common.base.Preconditions;

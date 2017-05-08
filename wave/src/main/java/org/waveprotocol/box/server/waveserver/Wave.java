@@ -19,7 +19,6 @@
 
 package org.waveprotocol.box.server.waveserver;
 
-import com.google.common.base.Preconditions;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
@@ -29,9 +28,9 @@ import com.google.common.collect.Iterators;
 import com.google.common.util.concurrent.ListenableFuture;
 
 import org.waveprotocol.box.server.persistence.PersistenceException;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.util.Iterator;

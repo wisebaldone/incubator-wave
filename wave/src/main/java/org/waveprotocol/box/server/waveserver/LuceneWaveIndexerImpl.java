@@ -23,7 +23,7 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
 import org.waveprotocol.box.server.waveserver.PerUserWaveViewBus.Listener;
-import org.waveprotocol.wave.model.id.WaveletName;
+import org.apache.wave.server.model.id.WaveletName;
 
 /**
  * @author yurize@apache.org (Yuri Zelikov)

@@ -26,7 +26,7 @@ import org.waveprotocol.wave.client.scheduler.Scheduler.Listener;
 import org.waveprotocol.wave.client.scheduler.Scheduler.Priority;
 import org.waveprotocol.wave.client.scheduler.Scheduler.Schedulable;
 import org.waveprotocol.wave.client.scheduler.testing.FakeSimpleTimer;
-import org.waveprotocol.wave.model.util.Pair;
+import org.apache.wave.server.model.util.Pair;
 
 import java.util.ArrayList;
 import java.util.Collection;

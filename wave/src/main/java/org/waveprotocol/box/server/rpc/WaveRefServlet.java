@@ -23,7 +23,7 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
 import org.waveprotocol.box.server.authentication.SessionManager;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.io.IOException;
 

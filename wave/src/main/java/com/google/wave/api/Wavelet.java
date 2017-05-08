@@ -22,9 +22,9 @@ package com.google.wave.api;
 import com.google.wave.api.Participants.Role;
 import com.google.wave.api.impl.WaveletData;
 
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

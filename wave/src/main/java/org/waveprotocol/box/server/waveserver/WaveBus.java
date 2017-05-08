@@ -20,9 +20,9 @@
 package org.waveprotocol.box.server.waveserver;
 
 import org.waveprotocol.box.common.DeltaSequence;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 
 /**
  * Provides a subscription service for changes to wavelets.

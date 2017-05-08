@@ -32,29 +32,39 @@ import com.google.wave.api.event.*;
 import com.google.wave.api.impl.EventMessageBundle;
 import com.google.wave.api.robot.Capability;
 import com.google.wave.api.robot.RobotName;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationListenerImpl;
+import org.apache.wave.server.model.conversation.ObservableConversation;
+import org.apache.wave.server.model.conversation.ObservableConversationBlip;
+import org.apache.wave.server.model.conversation.WaveletBasedConversation;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.wave.ObservableWavelet;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipationHelper;
+import org.apache.wave.server.model.wave.Wavelet;
+import org.apache.wave.server.model.wave.WaveletListener;
 import org.waveprotocol.box.server.robots.util.ConversationUtil;
 import org.waveprotocol.box.server.util.WaveletDataUtil;
-import org.waveprotocol.wave.model.conversation.*;
-import org.waveprotocol.wave.model.document.Doc.E;
-import org.waveprotocol.wave.model.document.Doc.N;
-import org.waveprotocol.wave.model.document.Doc.T;
-import org.waveprotocol.wave.model.document.DocHandler;
-import org.waveprotocol.wave.model.document.ObservableDocument;
-import org.waveprotocol.wave.model.document.indexed.DocumentEvent;
-import org.waveprotocol.wave.model.document.indexed.DocumentEvent.AnnotationChanged;
-import org.waveprotocol.wave.model.document.indexed.DocumentEvent.AttributesModified;
-import org.waveprotocol.wave.model.document.indexed.DocumentEvent.ContentInserted;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.SilentOperationSink;
-import org.waveprotocol.wave.model.operation.wave.BasicWaveletOperationContextFactory;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.operation.wave.WaveletBlipOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperation;
-import org.waveprotocol.wave.model.wave.*;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
-import org.waveprotocol.wave.model.wave.opbased.OpBasedWavelet;
-import org.waveprotocol.wave.model.wave.opbased.WaveletListenerImpl;
+import org.apache.wave.server.model.document.Doc.E;
+import org.apache.wave.server.model.document.Doc.N;
+import org.apache.wave.server.model.document.Doc.T;
+import org.apache.wave.server.model.document.DocHandler;
+import org.apache.wave.server.model.document.ObservableDocument;
+import org.apache.wave.server.model.document.indexed.DocumentEvent;
+import org.apache.wave.server.model.document.indexed.DocumentEvent.AnnotationChanged;
+import org.apache.wave.server.model.document.indexed.DocumentEvent.AttributesModified;
+import org.apache.wave.server.model.document.indexed.DocumentEvent.ContentInserted;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.SilentOperationSink;
+import org.apache.wave.server.model.operation.wave.BasicWaveletOperationContextFactory;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.operation.wave.WaveletBlipOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperation;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.wave.opbased.OpBasedWavelet;
+import org.apache.wave.server.model.wave.opbased.WaveletListenerImpl;
 
 import java.util.HashMap;
 import java.util.List;
@@ -294,7 +304,7 @@ public class EventGenerator {
                 // has to be obtained
                 // from the Element of the AttributesModified event.
                 String name =
-                    ((org.waveprotocol.wave.model.document.raw.impl.Element) attributesModified
+                    ((Element) attributesModified
                         .getElement()).getAttribute("name");
                 String oldValue = attributesModified.getOldValues().get("value");
                 if (name != null || oldValue != null) {
@@ -304,7 +314,7 @@ public class EventGenerator {
                 Map<Integer, com.google.wave.api.Element> elements = b.getElements();
                 Set<Integer> keys = elements.keySet();
                 // The gadget element provided by the eventComponent
-                org.waveprotocol.wave.model.document.raw.impl.Element rawGadget =
+                Element rawGadget =
                     ((Node) attributesModified.getElement()).getParentElement();
                 for (Integer key : keys) {
                   try {
@@ -333,8 +343,8 @@ public class EventGenerator {
           if (capabilities.containsKey(EventType.FORM_BUTTON_CLICKED)) {
             if (eventComponent.getType() == DocumentEvent.Type.CONTENT_INSERTED) {
               ContentInserted<N, E, T> contentInserted = (ContentInserted<N, E, T>) eventComponent;
-              org.waveprotocol.wave.model.document.raw.impl.Element elementInserted =
-                ((org.waveprotocol.wave.model.document.raw.impl.Element)
+              Element elementInserted =
+                ((Element)
                   contentInserted.getSubtreeElement());
               if (elementInserted.getTagName().equals("click")) {
                 FormButtonClickedEvent buttonClickedEvent =
@@ -375,14 +385,14 @@ public class EventGenerator {
     }
 
     /**
-     * Check if an {@link org.waveprotocol.wave.model.document.raw.impl.Element}
+     * Check if an {@link Element}
      * is and a {@link Gadget}
      *
      * @param rawElement
      * @param element
      * @return
      */
-    private boolean sameGadgets(org.waveprotocol.wave.model.document.raw.impl.Element rawElement,
+    private boolean sameGadgets(Element rawElement,
         Gadget element) {
       String ifr1 = rawElement.getAttribute("ifr");
       String ifr2 = element.getProperty("ifr");

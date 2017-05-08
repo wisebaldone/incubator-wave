@@ -23,21 +23,21 @@ import junit.framework.TestCase;
 
 import com.google.common.collect.ImmutableSet;
 
-import org.waveprotocol.wave.model.document.operation.impl.DocOpBuilder;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.wave.AddParticipant;
-import org.waveprotocol.wave.model.operation.wave.BlipContentOperation;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.operation.wave.WaveletBlipOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperationContext;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
-import org.waveprotocol.wave.model.wave.data.WaveletData;
+import org.apache.wave.server.model.document.operation.impl.DocOpBuilder;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.wave.AddParticipant;
+import org.apache.wave.server.model.operation.wave.BlipContentOperation;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.operation.wave.WaveletBlipOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperationContext;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.wave.data.WaveletData;
 
 import java.util.Arrays;
 

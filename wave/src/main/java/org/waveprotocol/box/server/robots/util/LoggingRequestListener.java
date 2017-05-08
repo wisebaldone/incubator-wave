@@ -20,7 +20,7 @@
 package org.waveprotocol.box.server.robots.util;
 
 import org.waveprotocol.box.server.waveserver.WaveletProvider.SubmitRequestListener;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersion;
 import org.waveprotocol.wave.util.logging.Log;
 
 /**

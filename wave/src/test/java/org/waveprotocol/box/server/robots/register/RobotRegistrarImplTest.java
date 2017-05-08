@@ -34,8 +34,8 @@ import org.waveprotocol.box.server.account.RobotAccountData;
 import org.waveprotocol.box.server.persistence.AccountStore;
 import org.waveprotocol.box.server.persistence.PersistenceException;
 import org.waveprotocol.box.server.robots.util.RobotsUtil.RobotRegistrationException;
-import org.waveprotocol.wave.model.id.TokenGenerator;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.TokenGenerator;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Unit tests for {@link RobotRegistrarImpl}.

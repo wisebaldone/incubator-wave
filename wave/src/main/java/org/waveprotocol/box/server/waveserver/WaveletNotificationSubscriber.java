@@ -22,9 +22,9 @@ package org.waveprotocol.box.server.waveserver;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 
 /**
  * Receives wave notifications.

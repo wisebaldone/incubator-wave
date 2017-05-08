@@ -24,7 +24,7 @@ import com.google.protobuf.Message;
 import com.google.protobuf.RpcCallback;
 import com.google.protobuf.Service;
 
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Implements the server end-point of a wave server RPC connection. This is a

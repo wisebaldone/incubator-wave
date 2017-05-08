@@ -23,16 +23,16 @@ package org.waveprotocol.wave.concurrencycontrol.client;
 import junit.framework.TestCase;
 
 import org.waveprotocol.wave.concurrencycontrol.common.DeltaPair;
-import org.waveprotocol.wave.model.document.operation.impl.DocOpBuilder;
-import org.waveprotocol.wave.model.operation.OpComparators;
-import org.waveprotocol.wave.model.operation.TransformException;
-import org.waveprotocol.wave.model.operation.wave.BlipContentOperation;
-import org.waveprotocol.wave.model.operation.wave.VersionUpdateOp;
-import org.waveprotocol.wave.model.operation.wave.WaveletBlipOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperation;
-import org.waveprotocol.wave.model.testing.DeltaTestUtil;
-import org.waveprotocol.wave.model.util.CollectionUtils;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.document.operation.impl.DocOpBuilder;
+import org.apache.wave.server.model.operation.OpComparators;
+import org.apache.wave.server.model.operation.TransformException;
+import org.apache.wave.server.model.operation.wave.BlipContentOperation;
+import org.apache.wave.server.model.operation.wave.VersionUpdateOp;
+import org.apache.wave.server.model.operation.wave.WaveletBlipOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperation;
+import org.apache.wave.server.model.testing.DeltaTestUtil;
+import org.apache.wave.server.model.util.CollectionUtils;
+import org.apache.wave.server.model.version.HashedVersion;
 
 import java.util.List;
 

@@ -20,16 +20,16 @@
 package org.waveprotocol.box.server.waveserver;
 
 import org.waveprotocol.box.common.DeltaSequence;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.operation.wave.AddParticipant;
-import org.waveprotocol.wave.model.operation.wave.RemoveParticipant;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperation;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.operation.wave.AddParticipant;
+import org.apache.wave.server.model.operation.wave.RemoveParticipant;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.operation.wave.WaveletOperation;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.util.concurrent.CopyOnWriteArraySet;

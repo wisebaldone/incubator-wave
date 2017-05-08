@@ -28,8 +28,8 @@ import com.google.wave.api.JsonRpcConstant.ParamsProperty;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.util.Collections;
 import java.util.HashMap;

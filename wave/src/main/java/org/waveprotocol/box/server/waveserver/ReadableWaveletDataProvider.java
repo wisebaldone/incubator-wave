@@ -19,8 +19,8 @@
 
 package org.waveprotocol.box.server.waveserver;
 
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 
 /**
  * Adapter for {@link WaveletProvider} with simpler interface for accessing

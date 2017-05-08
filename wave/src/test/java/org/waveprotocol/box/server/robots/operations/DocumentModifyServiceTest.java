@@ -40,10 +40,10 @@ import com.google.wave.api.impl.DocumentModifyQuery;
 
 import org.waveprotocol.box.server.robots.RobotsTestBase;
 import org.waveprotocol.box.server.robots.testing.OperationServiceHelper;
-import org.waveprotocol.wave.model.conversation.ObservableConversationBlip;
-import org.waveprotocol.wave.model.document.Document;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.conversation.ObservableConversationBlip;
+import org.apache.wave.server.model.document.Document;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
 
 import java.util.Collections;
 import java.util.List;

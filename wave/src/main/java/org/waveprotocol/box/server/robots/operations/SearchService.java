@@ -28,7 +28,7 @@ import com.google.wave.api.SearchResult;
 import org.waveprotocol.box.server.robots.OperationContext;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
 import org.waveprotocol.box.server.waveserver.SearchProvider;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 import java.util.Map;
 
 /**

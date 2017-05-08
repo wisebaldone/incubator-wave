@@ -41,7 +41,7 @@ import org.waveprotocol.wave.client.scheduler.testing.FakeTimerService;
 import org.waveprotocol.wave.client.widget.popup.PopupChrome;
 import org.waveprotocol.wave.client.widget.popup.PopupChromeProvider;
 import org.waveprotocol.wave.client.widget.popup.simple.Popup;
-import org.waveprotocol.wave.model.document.util.DocHelper;
+import org.apache.wave.server.model.document.util.DocHelper;
 
 /**
  *

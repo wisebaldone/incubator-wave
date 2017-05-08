@@ -22,9 +22,9 @@ package org.waveprotocol.box.server.waveserver;
 import com.google.common.base.Preconditions;
 
 import org.waveprotocol.wave.federation.Proto.ProtocolAppliedWaveletDelta;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import javax.annotation.Nullable;
 

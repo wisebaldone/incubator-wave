@@ -24,10 +24,10 @@ import com.google.common.base.Preconditions;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
 import org.waveprotocol.box.server.persistence.PersistenceException;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.util.Pair;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.util.Pair;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.io.BufferedReader;

@@ -32,8 +32,8 @@ import net.oauth.OAuthConsumer;
 import net.oauth.OAuthProblemException;
 import net.oauth.OAuthServiceProvider;
 
-import org.waveprotocol.wave.model.id.TokenGenerator;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.TokenGenerator;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 
 /**

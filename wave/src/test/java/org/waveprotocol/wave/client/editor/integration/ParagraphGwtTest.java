@@ -21,8 +21,8 @@ package org.waveprotocol.wave.client.editor.integration;
 
 import org.waveprotocol.wave.client.editor.content.paragraph.Paragraph;
 
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.operation.OperationException;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.operation.OperationException;
 
 /**
  * Unit tests for {@link Paragraph} element

@@ -21,9 +21,9 @@ package org.waveprotocol.box.server.waveserver;
 
 import com.google.common.collect.Multimap;
 
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Provides per user wave view.

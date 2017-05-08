@@ -22,7 +22,7 @@ package org.waveprotocol.box.server.waveserver;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
-import org.waveprotocol.wave.model.id.WaveletName;
+import org.apache.wave.server.model.id.WaveletName;
 
 
 /**

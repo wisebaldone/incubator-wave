@@ -30,11 +30,11 @@ import com.google.wave.api.data.ApiView.ElementInfo;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.conversation.Blips;
-import org.waveprotocol.wave.model.document.Document;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.testing.BasicFactories;
-import org.waveprotocol.wave.model.wave.Wavelet;
+import org.apache.wave.server.model.conversation.Blips;
+import org.apache.wave.server.model.document.Document;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.testing.BasicFactories;
+import org.apache.wave.server.model.wave.Wavelet;
 
 import java.util.List;
 

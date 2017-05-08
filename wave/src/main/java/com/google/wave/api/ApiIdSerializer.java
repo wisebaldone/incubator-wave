@@ -19,8 +19,8 @@
 
 package com.google.wave.api;
 
-import org.waveprotocol.wave.model.id.DualIdSerialiser;
-import org.waveprotocol.wave.model.id.IdSerialiser;
+import org.apache.wave.server.model.id.DualIdSerialiser;
+import org.apache.wave.server.model.id.IdSerialiser;
 
 /**
  * Serializer for ids transmitted as part of the API.

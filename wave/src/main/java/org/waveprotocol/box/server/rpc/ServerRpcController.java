@@ -21,7 +21,7 @@ package org.waveprotocol.box.server.rpc;
 
 import com.google.protobuf.RpcController;
 
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Extends RpcController to include additional state wave in a box requires.

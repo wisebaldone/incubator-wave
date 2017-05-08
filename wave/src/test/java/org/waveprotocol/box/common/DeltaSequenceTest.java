@@ -24,10 +24,10 @@ import com.google.common.collect.ImmutableList;
 import junit.framework.TestCase;
 
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletDelta;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.testing.DeltaTestUtil;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.testing.DeltaTestUtil;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.util.List;
 

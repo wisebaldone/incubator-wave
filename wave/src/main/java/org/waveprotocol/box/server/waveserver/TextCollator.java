@@ -23,7 +23,7 @@ import com.google.inject.ImplementedBy;
 
 import org.waveprotocol.box.common.Snippets;
 import org.waveprotocol.box.server.waveserver.TextCollator.SnippetTextCollatorImpl;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 
 /**
  * Adapter interface that provdes simpler access to {@link Snippet} methods.

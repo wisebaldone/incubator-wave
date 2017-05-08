@@ -39,12 +39,12 @@ import org.waveprotocol.wave.client.editor.content.paragraph.Paragraph.Alignment
 import org.waveprotocol.wave.client.editor.content.paragraph.Paragraph.Direction;
 import org.waveprotocol.wave.client.scheduler.FinalTaskRunner;
 import org.waveprotocol.wave.client.scheduler.Scheduler.Task;
-import org.waveprotocol.wave.model.document.indexed.IndexedDocumentImpl;
-import org.waveprotocol.wave.model.document.operation.Attributes;
-import org.waveprotocol.wave.model.document.operation.impl.DocInitializationBuilder;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.schema.conversation.ConversationSchemas;
-import org.waveprotocol.wave.model.util.CollectionUtils;
+import org.apache.wave.server.model.document.indexed.IndexedDocumentImpl;
+import org.apache.wave.server.model.document.operation.Attributes;
+import org.apache.wave.server.model.document.operation.impl.DocInitializationBuilder;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.schema.conversation.ConversationSchemas;
+import org.apache.wave.server.model.util.CollectionUtils;
 
 import java.io.PrintStream;
 import java.util.HashMap;

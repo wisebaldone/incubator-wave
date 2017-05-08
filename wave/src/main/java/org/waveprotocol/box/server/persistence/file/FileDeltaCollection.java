@@ -33,10 +33,10 @@ import org.waveprotocol.box.server.waveserver.AppliedDeltaUtil;
 import org.waveprotocol.box.server.waveserver.ByteStringMessage;
 import org.waveprotocol.box.server.waveserver.WaveletDeltaRecord;
 import org.waveprotocol.box.server.waveserver.DeltaStore.DeltasAccess;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.util.Pair;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.util.Pair;
+import org.apache.wave.server.model.version.HashedVersion;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.io.File;

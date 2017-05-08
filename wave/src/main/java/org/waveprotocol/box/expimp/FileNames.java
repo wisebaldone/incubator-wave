@@ -20,9 +20,9 @@ package org.waveprotocol.box.expimp;
 
 import org.waveprotocol.box.server.persistence.file.FileUtils;
 import org.waveprotocol.wave.media.model.AttachmentId;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.InvalidIdException;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.InvalidIdException;
 
 import java.text.DecimalFormat;
 

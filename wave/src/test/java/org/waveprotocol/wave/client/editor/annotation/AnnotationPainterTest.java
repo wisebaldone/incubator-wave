@@ -20,16 +20,16 @@
 package org.waveprotocol.wave.client.editor.annotation;
 
 
-import org.waveprotocol.wave.model.document.MutableDocument;
-import org.waveprotocol.wave.model.document.ReadableDocument;
-import org.waveprotocol.wave.model.document.operation.Attributes;
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
-import org.waveprotocol.wave.model.document.util.ContextProviders.TestDocumentContext;
-import org.waveprotocol.wave.model.document.util.PersistentContent;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.document.MutableDocument;
+import org.apache.wave.server.model.document.ReadableDocument;
+import org.apache.wave.server.model.document.operation.Attributes;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.util.ContextProviders.TestDocumentContext;
+import org.apache.wave.server.model.document.util.PersistentContent;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
 
 
 public class AnnotationPainterTest extends AnnotationPainterTestBase {

@@ -27,11 +27,11 @@ import com.google.wave.api.OperationType;
 
 import org.waveprotocol.box.server.robots.RobotsTestBase;
 import org.waveprotocol.box.server.robots.testing.OperationServiceHelper;
-import org.waveprotocol.wave.model.conversation.ObservableConversationBlip;
-import org.waveprotocol.wave.model.conversation.TitleHelper;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.id.LegacyIdSerialiser;
+import org.apache.wave.server.model.conversation.ObservableConversationBlip;
+import org.apache.wave.server.model.conversation.TitleHelper;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.id.LegacyIdSerialiser;
 
 /**
  * Unit tests for {@link WaveletSetTitleService}.

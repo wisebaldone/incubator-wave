@@ -19,12 +19,12 @@
 package org.waveprotocol.box.expimp;
 
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletDelta;
-import org.waveprotocol.wave.model.wave.InvalidParticipantAddress;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.InvalidParticipantAddress;
+import org.apache.wave.server.model.wave.ParticipantId;
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletOperation;
-import org.waveprotocol.wave.model.id.IdUtil;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.IdUtil;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.util.LinkedList;
 import java.util.List;

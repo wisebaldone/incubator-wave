@@ -48,8 +48,8 @@ import junit.framework.TestCase;
 import net.oauth.http.HttpMessage;
 
 import org.mockito.Matchers;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

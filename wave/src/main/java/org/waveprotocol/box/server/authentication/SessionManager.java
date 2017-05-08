@@ -20,7 +20,7 @@
 package org.waveprotocol.box.server.authentication;
 
 import org.waveprotocol.box.server.account.AccountData;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import javax.servlet.http.HttpSession;
 

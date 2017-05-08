@@ -30,10 +30,10 @@ import org.waveprotocol.box.server.account.RobotAccountData;
 import org.waveprotocol.box.server.persistence.PersistenceException;
 import org.waveprotocol.box.server.robots.agent.AbstractBaseRobotAgent;
 import org.waveprotocol.box.server.robots.util.RobotsUtil;
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.io.IOException;
 import java.util.logging.Level;

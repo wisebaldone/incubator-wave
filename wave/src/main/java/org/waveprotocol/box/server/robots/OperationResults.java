@@ -21,7 +21,7 @@ package org.waveprotocol.box.server.robots;
 
 import com.google.wave.api.JsonRpcResponse;
 
-import org.waveprotocol.wave.model.id.WaveletName;
+import org.apache.wave.server.model.id.WaveletName;
 
 import java.util.Map;
 

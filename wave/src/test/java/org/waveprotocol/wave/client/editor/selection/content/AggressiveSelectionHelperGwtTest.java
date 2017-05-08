@@ -32,9 +32,9 @@ import org.waveprotocol.wave.client.editor.content.ContentNode;
 import org.waveprotocol.wave.client.editor.content.paragraph.LineRendering;
 import org.waveprotocol.wave.client.editor.testing.ContentSerialisationUtil;
 import org.waveprotocol.wave.client.widget.popup.simple.Popup;
-import org.waveprotocol.wave.model.conversation.Blips;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.Pretty;
+import org.apache.wave.server.model.conversation.Blips;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.Pretty;
 
 /**
  * Tests for AggressiveSelectionHelper.

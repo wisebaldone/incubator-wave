@@ -20,10 +20,10 @@
 package org.waveprotocol.wave.concurrencycontrol.client;
 
 import org.waveprotocol.wave.concurrencycontrol.server.DeltaHistory;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.util.CollectionUtils;
-import org.waveprotocol.wave.model.util.Preconditions;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.util.CollectionUtils;
+import org.apache.wave.server.model.util.Preconditions;
+import org.apache.wave.server.model.version.HashedVersion;
 
 import java.util.HashMap;
 

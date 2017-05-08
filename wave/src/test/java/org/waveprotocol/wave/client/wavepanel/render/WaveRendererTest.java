@@ -25,6 +25,7 @@ import com.google.common.collect.Iterables;
 
 import junit.framework.TestCase;
 
+import org.apache.wave.server.model.document.Document;
 import org.waveprotocol.wave.client.account.ProfileManager;
 import org.waveprotocol.wave.client.account.impl.ProfileManagerImpl;
 import org.waveprotocol.wave.client.scheduler.testing.FakeTimerService;
@@ -32,13 +33,13 @@ import org.waveprotocol.wave.client.state.ThreadReadStateMonitor;
 import org.waveprotocol.wave.client.wavepanel.view.View;
 import org.waveprotocol.wave.client.wavepanel.view.dom.ModelAsViewProvider;
 import org.waveprotocol.wave.client.wavepanel.view.fake.FakeRenderer;
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ConversationThread;
-import org.waveprotocol.wave.model.conversation.ObservableConversationView;
-import org.waveprotocol.wave.model.conversation.testing.FakeConversationView;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.supplement.ObservableSupplementedWave;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationThread;
+import org.apache.wave.server.model.conversation.ObservableConversationView;
+import org.apache.wave.server.model.conversation.testing.FakeConversationView;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.supplement.ObservableSupplementedWave;
 
 /**
  * Tests commutativity between static rendering and dynamic rendering (i.e.,
@@ -90,7 +91,7 @@ public final class WaveRendererTest extends TestCase {
   }
 
   private static void write(ConversationBlip blip, String msg) {
-    org.waveprotocol.wave.model.document.Document d = blip.getContent();
+    Document d = blip.getContent();
     d.emptyElement(d.getDocumentElement());
     d.appendXml(XmlStringBuilder.createFromXmlString("<body><line></line>" + msg + "</body>"));
   }

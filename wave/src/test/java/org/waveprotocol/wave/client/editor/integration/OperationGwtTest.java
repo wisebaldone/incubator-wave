@@ -22,13 +22,13 @@ package org.waveprotocol.wave.client.editor.integration;
 import org.waveprotocol.wave.client.debug.logger.LogLevel;
 import org.waveprotocol.wave.client.editor.Editor;
 import org.waveprotocol.wave.client.editor.EditorTestingUtil;
-import org.waveprotocol.wave.model.document.operation.DocOp;
-import org.waveprotocol.wave.model.document.operation.Nindo;
-import org.waveprotocol.wave.model.document.operation.automaton.DocumentSchema;
-import org.waveprotocol.wave.model.document.util.DocProviders;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.OperationRuntimeException;
+import org.apache.wave.server.model.document.operation.DocOp;
+import org.apache.wave.server.model.document.operation.Nindo;
+import org.apache.wave.server.model.document.operation.automaton.DocumentSchema;
+import org.apache.wave.server.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.OperationRuntimeException;
 
 /**
  * Unit test applying Operations thru {@link Editor#execute(DocOp)}

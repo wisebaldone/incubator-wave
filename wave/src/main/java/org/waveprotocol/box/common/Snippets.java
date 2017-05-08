@@ -22,16 +22,16 @@ package org.waveprotocol.box.common;
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
 
-import org.waveprotocol.wave.model.document.operation.AnnotationBoundaryMap;
-import org.waveprotocol.wave.model.document.operation.Attributes;
-import org.waveprotocol.wave.model.document.operation.AttributesUpdate;
-import org.waveprotocol.wave.model.document.operation.DocInitializationCursor;
-import org.waveprotocol.wave.model.document.operation.DocOp;
-import org.waveprotocol.wave.model.document.operation.DocOpCursor;
-import org.waveprotocol.wave.model.document.operation.impl.InitializationCursorAdapter;
-import org.waveprotocol.wave.model.wave.data.ReadableBlipData;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
-import org.waveprotocol.wave.model.wave.data.WaveletData;
+import org.apache.wave.server.model.document.operation.AnnotationBoundaryMap;
+import org.apache.wave.server.model.document.operation.Attributes;
+import org.apache.wave.server.model.document.operation.AttributesUpdate;
+import org.apache.wave.server.model.document.operation.DocInitializationCursor;
+import org.apache.wave.server.model.document.operation.DocOp;
+import org.apache.wave.server.model.document.operation.DocOpCursor;
+import org.apache.wave.server.model.document.operation.impl.InitializationCursorAdapter;
+import org.apache.wave.server.model.wave.data.ReadableBlipData;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.wave.data.WaveletData;
 
 import java.util.ArrayList;
 import java.util.Arrays;

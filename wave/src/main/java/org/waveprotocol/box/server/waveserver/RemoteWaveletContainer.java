@@ -24,8 +24,7 @@ import com.google.protobuf.ByteString;
 
 import org.waveprotocol.wave.federation.FederationException;
 import org.waveprotocol.wave.federation.WaveletFederationProvider;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersion;
 
 import java.util.List;
 

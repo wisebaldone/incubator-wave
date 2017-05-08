@@ -24,8 +24,8 @@ import org.waveprotocol.wave.client.editor.content.AnnotationPainter.PaintFuncti
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.util.LocalDocument;
-import org.waveprotocol.wave.model.util.CollectionUtils;
+import org.apache.wave.server.model.document.util.LocalDocument;
+import org.apache.wave.server.model.util.CollectionUtils;
 
 import java.util.Map;
 

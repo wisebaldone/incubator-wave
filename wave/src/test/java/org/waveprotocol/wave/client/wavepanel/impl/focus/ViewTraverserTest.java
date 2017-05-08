@@ -22,6 +22,7 @@ package org.waveprotocol.wave.client.wavepanel.impl.focus;
 
 import junit.framework.TestCase;
 
+import org.apache.wave.server.model.conversation.testing.FakeConversationView;
 import org.waveprotocol.wave.client.wavepanel.view.AnchorView;
 import org.waveprotocol.wave.client.wavepanel.view.BlipMetaView;
 import org.waveprotocol.wave.client.wavepanel.view.BlipView;
@@ -36,10 +37,10 @@ import org.waveprotocol.wave.client.wavepanel.view.fake.FakeInlineThreadView;
 import org.waveprotocol.wave.client.wavepanel.view.fake.FakeRenderer;
 import org.waveprotocol.wave.client.wavepanel.view.fake.FakeThreadView;
 import org.waveprotocol.wave.client.wavepanel.view.fake.FakeTopConversationView;
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ConversationThread;
-import org.waveprotocol.wave.model.conversation.ObservableConversationView;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationThread;
+import org.apache.wave.server.model.conversation.ObservableConversationView;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -360,7 +361,7 @@ public class ViewTraverserTest extends TestCase {
   @Override
   protected void setUp() {
     traverser = new ViewTraverser();
-    wave = org.waveprotocol.wave.model.conversation.testing.FakeConversationView.builder().build();
+    wave = FakeConversationView.builder().build();
     Conversation main = wave.createRoot();
     renderer = FakeRenderer.create(wave);
     c = (FakeTopConversationView) renderer.render(main);

@@ -19,10 +19,10 @@
 
 package org.waveprotocol.box.server.util.testing;
 
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Commonly used constants for unit testing. Some constants taken from

@@ -21,15 +21,14 @@ package org.waveprotocol.box.server.robots.operations;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.inject.Inject;
-import com.google.protobuf.ByteString;
 import com.google.wave.api.InvalidRequestException;
 import com.google.wave.api.JsonRpcConstant.ParamsProperty;
 import com.google.wave.api.OperationRequest;
 import com.google.wave.api.impl.RawAttachmentData;
 
 import org.waveprotocol.box.server.robots.OperationContext;
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.wave.ParticipantId;
 import org.waveprotocol.box.server.attachment.AttachmentService;
 import org.waveprotocol.box.attachment.AttachmentMetadata;
 import org.waveprotocol.wave.media.model.AttachmentId;

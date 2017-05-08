@@ -21,7 +21,7 @@ package org.waveprotocol.wave.client.editor.content;
 
 import org.waveprotocol.wave.client.editor.testing.TestEditors;
 
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
 
 /**
  * Low level sanity tests for the editor's DOM implementation

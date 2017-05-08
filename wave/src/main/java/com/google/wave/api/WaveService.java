@@ -28,9 +28,9 @@ import com.google.wave.api.impl.WaveletData;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 import org.waveprotocol.wave.media.model.AttachmentId;
 
 import net.oauth.OAuth;

@@ -35,9 +35,9 @@ import org.waveprotocol.box.server.persistence.AttachmentUtil;
 import org.waveprotocol.box.server.waveserver.WaveServerException;
 import org.waveprotocol.box.server.waveserver.WaveletProvider;
 import org.waveprotocol.wave.media.model.AttachmentId;
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.wave.ParticipantId;
 import org.waveprotocol.wave.util.logging.Log;
 
 import javax.servlet.ServletException;

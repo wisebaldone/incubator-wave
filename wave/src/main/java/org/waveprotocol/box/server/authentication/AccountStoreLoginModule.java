@@ -24,8 +24,8 @@ import com.google.common.base.Preconditions;
 import org.waveprotocol.box.server.account.AccountData;
 import org.waveprotocol.box.server.persistence.AccountStore;
 import org.waveprotocol.box.server.persistence.PersistenceException;
-import org.waveprotocol.wave.model.wave.InvalidParticipantAddress;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.InvalidParticipantAddress;
+import org.apache.wave.server.model.wave.ParticipantId;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.util.Map;

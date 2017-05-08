@@ -21,7 +21,7 @@ package org.waveprotocol.box.server.util;
 
 import com.google.common.base.Preconditions;
 
-import org.waveprotocol.wave.model.util.Pair;
+import org.apache.wave.server.model.util.Pair;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.util.concurrent.CountDownLatch;

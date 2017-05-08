@@ -25,10 +25,10 @@ import com.google.wave.api.OperationRequest;
 
 import org.waveprotocol.box.server.robots.OperationContext;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
-import org.waveprotocol.wave.model.conversation.ObservableConversation;
-import org.waveprotocol.wave.model.conversation.TitleHelper;
-import org.waveprotocol.wave.model.document.Document;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.conversation.ObservableConversation;
+import org.apache.wave.server.model.conversation.TitleHelper;
+import org.apache.wave.server.model.document.Document;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Implements the "wavelet.setTitle" operation.

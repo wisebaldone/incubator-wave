@@ -19,23 +19,23 @@
 
 package org.waveprotocol.wave.client.editor.annotation;
 
-import org.waveprotocol.wave.model.document.indexed.IndexedDocument;
-import org.waveprotocol.wave.model.document.operation.DocOp;
-import org.waveprotocol.wave.model.document.operation.Nindo;
-import org.waveprotocol.wave.model.document.operation.automaton.DocumentSchema;
-import org.waveprotocol.wave.model.document.operation.impl.DocOpUtil;
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
-import org.waveprotocol.wave.model.document.util.DocProviders;
-import org.waveprotocol.wave.model.document.util.DocumentContext;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.OperationRuntimeException;
-import org.waveprotocol.wave.model.schema.conversation.ConversationSchemas;
-import org.waveprotocol.wave.model.testing.RandomDocOpGenerator.Parameters;
-import org.waveprotocol.wave.model.testing.RandomDocOpGenerator.RandomProvider;
-import org.waveprotocol.wave.model.testing.RandomDocOpGenerator.Parameters.AnnotationOption;
-import org.waveprotocol.wave.model.testing.RandomNindoGenerator;
+import org.apache.wave.server.model.document.indexed.IndexedDocument;
+import org.apache.wave.server.model.document.operation.DocOp;
+import org.apache.wave.server.model.document.operation.Nindo;
+import org.apache.wave.server.model.document.operation.automaton.DocumentSchema;
+import org.apache.wave.server.model.document.operation.impl.DocOpUtil;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.DocumentContext;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.OperationRuntimeException;
+import org.apache.wave.server.model.schema.conversation.ConversationSchemas;
+import org.apache.wave.server.model.testing.RandomDocOpGenerator.Parameters;
+import org.apache.wave.server.model.testing.RandomDocOpGenerator.RandomProvider;
+import org.apache.wave.server.model.testing.RandomDocOpGenerator.Parameters.AnnotationOption;
+import org.apache.wave.server.model.testing.RandomNindoGenerator;
 
 import java.util.Arrays;
 import java.util.Collections;

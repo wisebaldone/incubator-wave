@@ -24,9 +24,9 @@ import static junit.framework.Assert.assertEquals;
 import junit.framework.Assert;
 
 import org.waveprotocol.wave.concurrencycontrol.common.CorruptionDetail;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.util.CollectionUtils;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.util.CollectionUtils;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
 
 import java.util.Queue;
 

@@ -31,10 +31,10 @@ import org.waveprotocol.box.server.executor.ExecutorAnnotations.StorageContinuat
 import org.waveprotocol.box.server.executor.ExecutorAnnotations.WaveletLoadExecutor;
 import org.waveprotocol.box.server.persistence.PersistenceException;
 import org.waveprotocol.wave.crypto.*;
-import org.waveprotocol.wave.model.id.IdURIEncoderDecoder;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.version.HashedVersionFactory;
-import org.waveprotocol.wave.model.version.HashedVersionFactoryImpl;
+import org.apache.wave.server.model.id.IdURIEncoderDecoder;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.version.HashedVersionFactory;
+import org.apache.wave.server.model.version.HashedVersionFactoryImpl;
 import org.waveprotocol.wave.util.escapers.jvm.JavaUrlCodec;
 
 import java.util.concurrent.Callable;

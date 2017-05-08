@@ -39,11 +39,11 @@ import net.oauth.server.HttpRequestMessage;
 
 import org.waveprotocol.box.server.authentication.SessionManager;
 import org.waveprotocol.box.server.gxp.OAuthAuthorizeTokenPage;
-import org.waveprotocol.wave.model.id.TokenGenerator;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.TokenGenerator;
+import org.apache.wave.server.model.wave.ParticipantId;
 import org.waveprotocol.wave.util.logging.Log;
 import org.waveprotocol.box.server.gxp.OAuthAuthorizationCodePage;
-import org.waveprotocol.wave.model.util.CharBase64;
+import org.apache.wave.server.model.util.CharBase64;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

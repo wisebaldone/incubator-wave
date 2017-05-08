@@ -45,9 +45,9 @@ import com.google.wave.api.impl.GsonFactory;
 
 import net.oauth.OAuthException;
 
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.io.BufferedReader;
 import java.io.IOException;

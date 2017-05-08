@@ -26,13 +26,13 @@ import com.google.wave.api.Range;
 
 import org.waveprotocol.box.server.robots.RobotWaveletData;
 import org.waveprotocol.box.server.util.WaveletDataUtil;
-import org.waveprotocol.wave.model.id.IdURIEncoderDecoder;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.version.HashedVersionFactory;
-import org.waveprotocol.wave.model.version.HashedVersionZeroFactoryImpl;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.id.IdURIEncoderDecoder;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersionFactory;
+import org.apache.wave.server.model.version.HashedVersionZeroFactoryImpl;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
 import org.waveprotocol.wave.util.escapers.jvm.JavaUrlCodec;
 
 /**

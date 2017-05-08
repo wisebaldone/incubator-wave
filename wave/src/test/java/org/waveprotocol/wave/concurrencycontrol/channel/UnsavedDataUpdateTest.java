@@ -31,18 +31,18 @@ import org.waveprotocol.wave.concurrencycontrol.common.UnsavedDataListener;
 import org.waveprotocol.wave.concurrencycontrol.common.UnsavedDataListenerFactory;
 import org.waveprotocol.wave.concurrencycontrol.testing.FakeWaveViewServiceUpdate;
 import org.waveprotocol.wave.concurrencycontrol.testing.MockWaveViewService;
-import org.waveprotocol.wave.model.id.IdFilters;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.operation.wave.AddParticipant;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperationContext;
-import org.waveprotocol.wave.model.testing.BasicFactories;
-import org.waveprotocol.wave.model.testing.FakeHashedVersionFactory;
-import org.waveprotocol.wave.model.util.ImmediateExcecutionScheduler;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
-import org.waveprotocol.wave.model.wave.data.impl.EmptyWaveletSnapshot;
+import org.apache.wave.server.model.id.IdFilters;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.operation.wave.AddParticipant;
+import org.apache.wave.server.model.operation.wave.WaveletOperationContext;
+import org.apache.wave.server.model.testing.BasicFactories;
+import org.apache.wave.server.model.testing.FakeHashedVersionFactory;
+import org.apache.wave.server.model.util.ImmediateExcecutionScheduler;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.wave.data.impl.EmptyWaveletSnapshot;
 
 /**
  * Tests that the CC stack provides correct unsaved data info.

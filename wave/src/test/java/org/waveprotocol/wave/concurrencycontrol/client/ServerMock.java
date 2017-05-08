@@ -22,11 +22,11 @@ package org.waveprotocol.wave.concurrencycontrol.client;
 import org.waveprotocol.wave.concurrencycontrol.common.ChannelException;
 import org.waveprotocol.wave.concurrencycontrol.server.ConcurrencyControlCore;
 import org.waveprotocol.wave.concurrencycontrol.server.ConcurrencyControlCore.ReOpenInfo;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.TransformException;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.operation.wave.WaveletDelta;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.TransformException;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.operation.wave.WaveletDelta;
+import org.apache.wave.server.model.version.HashedVersion;
 
 import java.util.List;
 import java.util.Vector;

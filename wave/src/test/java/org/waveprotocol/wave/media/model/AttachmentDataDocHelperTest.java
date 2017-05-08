@@ -22,12 +22,12 @@ package org.waveprotocol.wave.media.model;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.ObservableDocument;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.testing.BasicFactories;
-import org.waveprotocol.wave.model.testing.FakeWaveView;
-import org.waveprotocol.wave.model.wave.opbased.OpBasedWavelet;
+import org.apache.wave.server.model.document.ObservableDocument;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.testing.BasicFactories;
+import org.apache.wave.server.model.testing.FakeWaveView;
+import org.apache.wave.server.model.wave.opbased.OpBasedWavelet;
 
 /**
  * Attachment data document helper tests.

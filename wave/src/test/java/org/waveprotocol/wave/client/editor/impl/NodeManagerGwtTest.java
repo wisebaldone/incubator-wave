@@ -32,7 +32,7 @@ import org.waveprotocol.wave.client.editor.extract.InconsistencyException.HtmlIn
 import org.waveprotocol.wave.client.editor.extract.InconsistencyException.HtmlMissing;
 import org.waveprotocol.wave.client.editor.testing.TestEditors;
 
-import org.waveprotocol.wave.model.document.util.Point;
+import org.apache.wave.server.model.document.util.Point;
 
 /**
  * Tests our mapping logic from HTML to wrapper nodes.

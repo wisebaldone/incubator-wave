@@ -54,7 +54,7 @@ import org.waveprotocol.box.server.stat.TimingFilter;
 import org.waveprotocol.box.server.waveserver.*;
 import org.waveprotocol.box.stat.StatService;
 import org.waveprotocol.wave.crypto.CertPathStore;
-import org.waveprotocol.wave.model.wave.ParticipantIdUtil;
+import org.apache.wave.server.model.wave.ParticipantIdUtil;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.io.File;

@@ -22,16 +22,16 @@ package org.waveprotocol.box.server.robots.util;
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
 
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ObservableConversationView;
-import org.waveprotocol.wave.model.conversation.WaveBasedConversationView;
-import org.waveprotocol.wave.model.conversation.WaveletBasedConversation;
-import org.waveprotocol.wave.model.id.IdGenerator;
-import org.waveprotocol.wave.model.id.IdUtil;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.wave.ObservableWavelet;
-import org.waveprotocol.wave.model.wave.ReadOnlyWaveView;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ObservableConversationView;
+import org.apache.wave.server.model.conversation.WaveBasedConversationView;
+import org.apache.wave.server.model.conversation.WaveletBasedConversation;
+import org.apache.wave.server.model.id.IdGenerator;
+import org.apache.wave.server.model.id.IdUtil;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.wave.ObservableWavelet;
+import org.apache.wave.server.model.wave.ReadOnlyWaveView;
 
 /**
  * Utility class for {@link Conversation}s used by the Robot API.

@@ -35,13 +35,13 @@ import org.waveprotocol.wave.client.wave.DocumentRegistry;
 import org.waveprotocol.wave.client.wave.InteractiveDocument;
 import org.waveprotocol.wave.client.wavepanel.view.BlipView;
 import org.waveprotocol.wave.client.wavepanel.view.dom.ModelAsViewProvider;
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ObservableConversation;
-import org.waveprotocol.wave.model.conversation.ObservableConversationBlip;
-import org.waveprotocol.wave.model.conversation.testing.FakeConversationView;
-import org.waveprotocol.wave.model.supplement.ObservableSupplementedWave;
-import org.waveprotocol.wave.model.wave.data.DocumentOperationSink;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ObservableConversation;
+import org.apache.wave.server.model.conversation.ObservableConversationBlip;
+import org.apache.wave.server.model.conversation.testing.FakeConversationView;
+import org.apache.wave.server.model.supplement.ObservableSupplementedWave;
+import org.apache.wave.server.model.wave.data.DocumentOperationSink;
 
 /**
  * Tests for {@link DiffController}

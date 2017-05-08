@@ -27,18 +27,18 @@ import com.google.wave.api.data.converter.EventDataConverter;
 import com.google.wave.api.event.Event;
 
 import org.waveprotocol.box.server.robots.util.ConversationUtil;
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ObservableConversationView;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.opbased.OpBasedWavelet;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ObservableConversationView;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.opbased.OpBasedWavelet;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
 import org.waveprotocol.box.server.frontend.CommittedWaveletSnapshot;
-import org.waveprotocol.wave.model.id.WaveletName;
+import org.apache.wave.server.model.id.WaveletName;
 import org.waveprotocol.box.common.Receiver;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersion;
 
 import java.util.Map;
 

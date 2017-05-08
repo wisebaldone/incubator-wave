@@ -31,8 +31,8 @@ import org.waveprotocol.wave.client.editor.content.paragraph.LineRendering;
 import org.waveprotocol.wave.client.editor.keys.KeyBindingRegistry;
 import org.waveprotocol.wave.client.editor.testing.ContentSerialisationUtil;
 import org.waveprotocol.wave.client.widget.popup.simple.Popup;
-import org.waveprotocol.wave.model.conversation.Blips;
-import org.waveprotocol.wave.model.document.util.LineContainers;
+import org.apache.wave.server.model.conversation.Blips;
+import org.apache.wave.server.model.document.util.LineContainers;
 
 /**
  * Tests that the image doodad renderer is hooked up to the editor and draws images correctly.

@@ -26,12 +26,12 @@ import org.waveprotocol.box.server.common.CoreWaveletOperationSerializer;
 import org.waveprotocol.wave.federation.Proto.ProtocolAppliedWaveletDelta;
 import org.waveprotocol.wave.federation.Proto.ProtocolSignedDelta;
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletDelta;
-import org.waveprotocol.wave.model.id.IdURIEncoderDecoder;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.operation.wave.WaveletDelta;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.version.HashedVersionFactory;
-import org.waveprotocol.wave.model.version.HashedVersionFactoryImpl;
+import org.apache.wave.server.model.id.IdURIEncoderDecoder;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.operation.wave.WaveletDelta;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersionFactory;
+import org.apache.wave.server.model.version.HashedVersionFactoryImpl;
 import org.waveprotocol.wave.util.escapers.jvm.JavaUrlCodec;
 
 /**

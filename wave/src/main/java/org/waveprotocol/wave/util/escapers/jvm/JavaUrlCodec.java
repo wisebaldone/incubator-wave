@@ -19,7 +19,7 @@
 
 package org.waveprotocol.wave.util.escapers.jvm;
 
-import org.waveprotocol.wave.model.id.URIEncoderDecoder;
+import org.apache.wave.server.model.id.URIEncoderDecoder;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

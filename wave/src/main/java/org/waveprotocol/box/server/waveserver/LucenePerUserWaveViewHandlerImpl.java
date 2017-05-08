@@ -41,12 +41,12 @@ import org.apache.lucene.util.Version;
 import org.waveprotocol.box.server.CoreSettingsNames;
 import org.waveprotocol.box.server.executor.ExecutorAnnotations.IndexExecutor;
 import org.waveprotocol.box.server.persistence.lucene.IndexDirectory;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.ParticipantIdUtil;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantIdUtil;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 
 import java.io.Closeable;
 import java.io.IOException;

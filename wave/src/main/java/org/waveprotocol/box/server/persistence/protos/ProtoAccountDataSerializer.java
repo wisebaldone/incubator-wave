@@ -42,7 +42,7 @@ import org.waveprotocol.box.server.persistence.protos.ProtoAccountStoreData.Prot
 import org.waveprotocol.box.server.persistence.protos.ProtoAccountStoreData.ProtoRobotCapabilities;
 import org.waveprotocol.box.server.persistence.protos.ProtoAccountStoreData.ProtoRobotCapability;
 import org.waveprotocol.box.server.robots.RobotCapabilities;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.util.List;
 import java.util.Map;

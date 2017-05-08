@@ -25,7 +25,6 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 import com.google.protobuf.Message;
-import com.google.protobuf.MessageLite;
 import com.google.wave.api.FetchProfilesRequest;
 import com.google.wave.api.FetchProfilesResult;
 import com.google.wave.api.JsonRpcConstant.ParamsProperty;
@@ -45,7 +44,7 @@ import org.waveprotocol.box.server.robots.util.ConversationUtil;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
 import org.waveprotocol.box.server.rpc.ProtoSerializer.SerializationException;
 import org.waveprotocol.box.server.waveserver.WaveletProvider;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;

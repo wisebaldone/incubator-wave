@@ -30,6 +30,7 @@ import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.user.client.Command;
 
+import org.apache.wave.server.model.document.Document;
 import org.waveprotocol.wave.client.StageOne;
 import org.waveprotocol.wave.client.StageThree;
 import org.waveprotocol.wave.client.StageTwo;
@@ -48,31 +49,31 @@ import org.waveprotocol.wave.client.wavepanel.impl.toolbar.color.ComplexColorPic
 import org.waveprotocol.wave.client.wavepanel.impl.toolbar.color.SampleCustomColorPicker;
 import org.waveprotocol.wave.common.bootstrap.FlagConstants;
 import org.waveprotocol.wave.concurrencycontrol.channel.WaveViewService;
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ConversationThread;
-import org.waveprotocol.wave.model.conversation.ConversationView;
-import org.waveprotocol.wave.model.conversation.WaveBasedConversationView;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.id.IdGenerator;
-import org.waveprotocol.wave.model.schema.SchemaProvider;
-import org.waveprotocol.wave.model.schema.conversation.ConversationSchemas;
-import org.waveprotocol.wave.model.testing.BasicFactories;
-import org.waveprotocol.wave.model.testing.FakeIdGenerator;
-import org.waveprotocol.wave.model.util.CollectionUtils;
-import org.waveprotocol.wave.model.util.ReadableStringMap.ProcV;
-import org.waveprotocol.wave.model.util.StringMap;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.data.DocumentFactory;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
-import org.waveprotocol.wave.model.wave.data.WaveViewData;
-import org.waveprotocol.wave.model.wave.data.impl.WaveViewDataImpl;
-import org.waveprotocol.wave.model.wave.data.impl.WaveletDataImpl;
-import org.waveprotocol.wave.model.wave.opbased.OpBasedWavelet;
-import org.waveprotocol.wave.model.wave.opbased.WaveViewImpl;
-import org.waveprotocol.wave.model.wave.opbased.WaveViewImpl.WaveletConfigurator;
-import org.waveprotocol.wave.model.wave.opbased.WaveViewImpl.WaveletFactory;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationThread;
+import org.apache.wave.server.model.conversation.ConversationView;
+import org.apache.wave.server.model.conversation.WaveBasedConversationView;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.id.IdGenerator;
+import org.apache.wave.server.model.schema.SchemaProvider;
+import org.apache.wave.server.model.schema.conversation.ConversationSchemas;
+import org.apache.wave.server.model.testing.BasicFactories;
+import org.apache.wave.server.model.testing.FakeIdGenerator;
+import org.apache.wave.server.model.util.CollectionUtils;
+import org.apache.wave.server.model.util.ReadableStringMap.ProcV;
+import org.apache.wave.server.model.util.StringMap;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.data.DocumentFactory;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.wave.data.WaveViewData;
+import org.apache.wave.server.model.wave.data.impl.WaveViewDataImpl;
+import org.apache.wave.server.model.wave.data.impl.WaveletDataImpl;
+import org.apache.wave.server.model.wave.opbased.OpBasedWavelet;
+import org.apache.wave.server.model.wave.opbased.WaveViewImpl;
+import org.apache.wave.server.model.wave.opbased.WaveViewImpl.WaveletConfigurator;
+import org.apache.wave.server.model.wave.opbased.WaveViewImpl.WaveletFactory;
 
 /**
  * Kicks off some initial actions for development purposes.
@@ -331,7 +332,7 @@ public class UndercurrentHarness implements EntryPoint {
     }
 
     private static void write(ConversationBlip blip) {
-      org.waveprotocol.wave.model.document.Document d = blip.getContent();
+      Document d = blip.getContent();
       d.emptyElement(d.getDocumentElement());
       d.appendXml(XmlStringBuilder.createFromXmlString("<body><line></line>Hello World</body>"));
     }

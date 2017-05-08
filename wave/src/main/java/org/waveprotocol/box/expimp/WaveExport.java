@@ -18,14 +18,13 @@
  */
 package org.waveprotocol.box.expimp;
 
-import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import org.waveprotocol.wave.communication.gson.GsonException;
-import org.waveprotocol.wave.model.util.Base64DecoderException;
+import org.apache.wave.server.model.util.Base64DecoderException;
 import com.google.wave.api.SearchResult;
 import com.google.wave.api.SearchResult.Digest;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletDelta;
 import org.waveprotocol.wave.media.model.AttachmentId;
 import org.waveprotocol.box.common.comms.proto.WaveletSnapshotProtoImpl;
@@ -51,11 +50,11 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import org.waveprotocol.box.server.common.CoreWaveletOperationSerializer;
 import org.waveprotocol.wave.federation.Proto.ProtocolHashedVersion;
-import org.waveprotocol.wave.model.id.IdURIEncoderDecoder;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.version.HashedVersionFactory;
-import org.waveprotocol.wave.model.version.HashedVersionFactoryImpl;
+import org.apache.wave.server.model.id.IdURIEncoderDecoder;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersionFactory;
+import org.apache.wave.server.model.version.HashedVersionFactoryImpl;
 import org.waveprotocol.wave.util.escapers.jvm.JavaUrlCodec;
 
 /**

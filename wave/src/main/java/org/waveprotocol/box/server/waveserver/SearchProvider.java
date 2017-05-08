@@ -21,7 +21,7 @@ package org.waveprotocol.box.server.waveserver;
 
 import com.google.wave.api.SearchResult;
 
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 
 /**

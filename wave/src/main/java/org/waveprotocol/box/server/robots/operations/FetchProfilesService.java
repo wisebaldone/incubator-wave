@@ -32,7 +32,7 @@ import com.google.wave.api.ParticipantProfile;
 
 import org.waveprotocol.box.server.robots.OperationContext;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.util.List;
 import java.util.Map;

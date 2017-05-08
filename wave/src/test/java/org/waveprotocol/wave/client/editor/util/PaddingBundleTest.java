@@ -19,14 +19,14 @@
 
 package org.waveprotocol.wave.client.editor.util;
 
-import org.waveprotocol.wave.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.DocProviders;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.indexed.IndexedDocument;
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.indexed.IndexedDocument;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
 
 /**
  * Tests numerous cases for the padding calculations.

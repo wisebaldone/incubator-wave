@@ -23,7 +23,7 @@ import com.google.wave.api.InvalidRequestException;
 import com.google.wave.api.OperationRequest;
 
 import org.waveprotocol.box.server.robots.OperationContext;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Executor of robot operations.

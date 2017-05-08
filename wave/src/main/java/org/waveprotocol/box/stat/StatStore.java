@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
-import org.waveprotocol.wave.model.util.Pair;
+import org.apache.wave.server.model.util.Pair;
 import com.google.common.collect.ImmutableList;
 
 /**

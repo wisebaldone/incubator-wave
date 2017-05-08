@@ -21,10 +21,10 @@ package org.waveprotocol.wave.util.escapers;
 
 import com.google.gwt.http.client.URL;
 
-import org.waveprotocol.wave.model.waveref.InvalidWaveRefException;
-import org.waveprotocol.wave.model.waveref.WaveRef;
-import org.waveprotocol.wave.model.waveref.WaverefEncoder;
-import org.waveprotocol.wave.model.waveref.WaverefEncoder.PercentEncoderDecoder;
+import org.apache.wave.server.model.waveref.InvalidWaveRefException;
+import org.apache.wave.server.model.waveref.WaveRef;
+import org.apache.wave.server.model.waveref.WaverefEncoder;
+import org.apache.wave.server.model.waveref.WaverefEncoder.PercentEncoderDecoder;
 
 /**
  * GWT-enabled instance of WaverefEncoder for use in the client.

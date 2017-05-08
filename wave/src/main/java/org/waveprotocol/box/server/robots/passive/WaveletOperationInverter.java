@@ -19,19 +19,19 @@
 
 package org.waveprotocol.box.server.robots.passive;
 
-import org.waveprotocol.wave.model.document.operation.algorithm.DocOpInverter;
-import org.waveprotocol.wave.model.operation.wave.AddParticipant;
-import org.waveprotocol.wave.model.operation.wave.BlipContentOperation;
-import org.waveprotocol.wave.model.operation.wave.BlipOperation;
-import org.waveprotocol.wave.model.operation.wave.BlipOperationVisitor;
-import org.waveprotocol.wave.model.operation.wave.NoOp;
-import org.waveprotocol.wave.model.operation.wave.RemoveParticipant;
-import org.waveprotocol.wave.model.operation.wave.SubmitBlip;
-import org.waveprotocol.wave.model.operation.wave.VersionUpdateOp;
-import org.waveprotocol.wave.model.operation.wave.WaveletBlipOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperationContext;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperationVisitor;
+import org.apache.wave.server.model.document.operation.algorithm.DocOpInverter;
+import org.apache.wave.server.model.operation.wave.AddParticipant;
+import org.apache.wave.server.model.operation.wave.BlipContentOperation;
+import org.apache.wave.server.model.operation.wave.BlipOperation;
+import org.apache.wave.server.model.operation.wave.BlipOperationVisitor;
+import org.apache.wave.server.model.operation.wave.NoOp;
+import org.apache.wave.server.model.operation.wave.RemoveParticipant;
+import org.apache.wave.server.model.operation.wave.SubmitBlip;
+import org.apache.wave.server.model.operation.wave.VersionUpdateOp;
+import org.apache.wave.server.model.operation.wave.WaveletBlipOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperationContext;
+import org.apache.wave.server.model.operation.wave.WaveletOperationVisitor;
 
 /**
  * Approximately inverts an applied wavelet operation.

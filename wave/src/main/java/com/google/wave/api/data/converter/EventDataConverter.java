@@ -23,10 +23,10 @@ import com.google.wave.api.BlipData;
 import com.google.wave.api.impl.EventMessageBundle;
 import com.google.wave.api.impl.WaveletData;
 
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.Wavelet;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.Wavelet;
 
 import java.util.Collection;
 import java.util.List;

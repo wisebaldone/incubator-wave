@@ -19,17 +19,16 @@
 package org.waveprotocol.box.expimp;
 
 import com.google.gson.Gson;
-import com.google.protobuf.ByteString;
 import com.google.wave.api.WaveService;
 import com.google.wave.api.impl.RawAttachmentData;
 import com.google.wave.api.impl.GsonFactory;
 
 import org.waveprotocol.wave.media.model.AttachmentId;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.IdUtil;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.IdUtil;
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletDelta;
-import org.waveprotocol.wave.model.wave.InvalidParticipantAddress;
+import org.apache.wave.server.model.wave.InvalidParticipantAddress;
 
 import java.io.File;
 import java.io.FileNotFoundException;

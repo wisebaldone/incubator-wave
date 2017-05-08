@@ -26,7 +26,7 @@ import org.waveprotocol.box.attachment.AttachmentProto;
 import org.waveprotocol.box.attachment.proto.AttachmentMetadataProtoImpl;
 import org.waveprotocol.box.server.persistence.AttachmentStore;
 import org.waveprotocol.wave.media.model.AttachmentId;
-import org.waveprotocol.wave.model.util.CharBase64;
+import org.apache.wave.server.model.util.CharBase64;
 
 import java.io.*;
 

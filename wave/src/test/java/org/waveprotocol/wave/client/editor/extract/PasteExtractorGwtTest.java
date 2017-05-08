@@ -30,13 +30,13 @@ import org.waveprotocol.wave.client.editor.testing.ContentSerialisationUtil;
 import org.waveprotocol.wave.client.editor.testing.TestEditors;
 import org.waveprotocol.wave.client.editor.testing.TestInlineDoodad;
 import org.waveprotocol.wave.client.editor.testtools.ContentWithSelection;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.BiasDirection;
-import org.waveprotocol.wave.model.document.operation.DocOp;
-import org.waveprotocol.wave.model.document.util.FocusedRange;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.operation.SilentOperationSink;
-import org.waveprotocol.wave.model.schema.conversation.ConversationSchemas;
+import org.apache.wave.server.model.document.AnnotationBehaviour.BiasDirection;
+import org.apache.wave.server.model.document.operation.DocOp;
+import org.apache.wave.server.model.document.util.FocusedRange;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.operation.SilentOperationSink;
+import org.apache.wave.server.model.schema.conversation.ConversationSchemas;
 
 /**
  * Test cut and paste extracting logic.

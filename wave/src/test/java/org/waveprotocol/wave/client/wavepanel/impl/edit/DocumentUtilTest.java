@@ -21,18 +21,18 @@ package org.waveprotocol.wave.client.wavepanel.impl.edit;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.MutableDocument;
-import org.waveprotocol.wave.model.document.operation.automaton.DocumentSchema;
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
-import org.waveprotocol.wave.model.document.util.ContextProviders;
-import org.waveprotocol.wave.model.document.util.ContextProviders.TestDocumentContext;
-import org.waveprotocol.wave.model.document.util.DocHelper;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.document.util.PersistentContent;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.PointRange;
+import org.apache.wave.server.model.document.MutableDocument;
+import org.apache.wave.server.model.document.operation.automaton.DocumentSchema;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.util.ContextProviders;
+import org.apache.wave.server.model.document.util.ContextProviders.TestDocumentContext;
+import org.apache.wave.server.model.document.util.DocHelper;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.document.util.PersistentContent;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.PointRange;
 
 import java.util.Collections;
 

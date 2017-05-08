@@ -34,7 +34,7 @@ import com.google.wave.api.BlipThread;
 import com.google.wave.api.SearchResult;
 
 import org.apache.commons.codec.binary.Base64;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.lang.reflect.Type;
 import java.util.*;

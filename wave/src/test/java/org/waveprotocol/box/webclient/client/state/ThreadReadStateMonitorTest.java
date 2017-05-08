@@ -23,21 +23,21 @@ import junit.framework.TestCase;
 
 import org.waveprotocol.wave.client.state.ThreadReadStateMonitor;
 import org.waveprotocol.wave.client.state.ThreadReadStateMonitorImpl;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ConversationThread;
-import org.waveprotocol.wave.model.conversation.WaveBasedConversationView;
-import org.waveprotocol.wave.model.conversation.WaveletBasedConversation;
-import org.waveprotocol.wave.model.id.IdGenerator;
-import org.waveprotocol.wave.model.supplement.LiveSupplementedWaveImpl;
-import org.waveprotocol.wave.model.supplement.ObservablePrimitiveSupplement;
-import org.waveprotocol.wave.model.supplement.ObservableSupplementedWave;
-import org.waveprotocol.wave.model.supplement.SupplementedWaveImpl.DefaultFollow;
-import org.waveprotocol.wave.model.supplement.WaveletBasedSupplement;
-import org.waveprotocol.wave.model.testing.BasicFactories;
-import org.waveprotocol.wave.model.testing.FakeIdGenerator;
-import org.waveprotocol.wave.model.testing.FakeWaveView;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.Wavelet;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationThread;
+import org.apache.wave.server.model.conversation.WaveBasedConversationView;
+import org.apache.wave.server.model.conversation.WaveletBasedConversation;
+import org.apache.wave.server.model.id.IdGenerator;
+import org.apache.wave.server.model.supplement.LiveSupplementedWaveImpl;
+import org.apache.wave.server.model.supplement.ObservablePrimitiveSupplement;
+import org.apache.wave.server.model.supplement.ObservableSupplementedWave;
+import org.apache.wave.server.model.supplement.SupplementedWaveImpl.DefaultFollow;
+import org.apache.wave.server.model.supplement.WaveletBasedSupplement;
+import org.apache.wave.server.model.testing.BasicFactories;
+import org.apache.wave.server.model.testing.FakeIdGenerator;
+import org.apache.wave.server.model.testing.FakeWaveView;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.Wavelet;
 
 
 /**

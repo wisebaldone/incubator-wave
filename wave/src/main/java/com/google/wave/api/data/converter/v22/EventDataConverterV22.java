@@ -28,11 +28,11 @@ import com.google.wave.api.data.converter.v21.EventDataConverterV21;
 import com.google.wave.api.impl.EventMessageBundle;
 import com.google.wave.api.impl.WaveletData;
 
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ConversationBlip.LocatedReplyThread;
-import org.waveprotocol.wave.model.conversation.ConversationThread;
-import org.waveprotocol.wave.model.wave.Wavelet;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationBlip.LocatedReplyThread;
+import org.apache.wave.server.model.conversation.ConversationThread;
+import org.apache.wave.server.model.wave.Wavelet;
 
 import java.util.List;
 

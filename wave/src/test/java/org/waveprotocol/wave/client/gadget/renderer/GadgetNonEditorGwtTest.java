@@ -19,14 +19,14 @@
 
 package org.waveprotocol.wave.client.gadget.renderer;
 
-import static org.waveprotocol.wave.model.gadget.GadgetConstants.AUTHOR_ATTRIBUTE;
-import static org.waveprotocol.wave.model.gadget.GadgetConstants.CATEGORY_TAGNAME;
-import static org.waveprotocol.wave.model.gadget.GadgetConstants.TAGNAME;
-import static org.waveprotocol.wave.model.gadget.GadgetConstants.KEY_ATTRIBUTE;
-import static org.waveprotocol.wave.model.gadget.GadgetConstants.PREFS_ATTRIBUTE;
-import static org.waveprotocol.wave.model.gadget.GadgetConstants.STATE_ATTRIBUTE;
-import static org.waveprotocol.wave.model.gadget.GadgetConstants.TITLE_ATTRIBUTE;
-import static org.waveprotocol.wave.model.gadget.GadgetConstants.URL_ATTRIBUTE;
+import static org.apache.wave.server.model.gadget.GadgetConstants.AUTHOR_ATTRIBUTE;
+import static org.apache.wave.server.model.gadget.GadgetConstants.CATEGORY_TAGNAME;
+import static org.apache.wave.server.model.gadget.GadgetConstants.TAGNAME;
+import static org.apache.wave.server.model.gadget.GadgetConstants.KEY_ATTRIBUTE;
+import static org.apache.wave.server.model.gadget.GadgetConstants.PREFS_ATTRIBUTE;
+import static org.apache.wave.server.model.gadget.GadgetConstants.STATE_ATTRIBUTE;
+import static org.apache.wave.server.model.gadget.GadgetConstants.TITLE_ATTRIBUTE;
+import static org.apache.wave.server.model.gadget.GadgetConstants.URL_ATTRIBUTE;
 
 import com.google.gwt.http.client.URL;
 import com.google.gwt.json.client.JSONObject;
@@ -35,11 +35,11 @@ import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.Window.Location;
 
 import org.waveprotocol.wave.client.gadget.GadgetXmlUtil;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.id.ModernIdSerialiser;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.id.ModernIdSerialiser;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
 
 /**
  * Tests Gadget class functionality that can be tested outside of the Editor framework.

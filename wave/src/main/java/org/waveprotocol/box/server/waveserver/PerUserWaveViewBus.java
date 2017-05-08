@@ -21,8 +21,8 @@ package org.waveprotocol.box.server.waveserver;
 
 import com.google.common.util.concurrent.ListenableFuture;
 
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Provides a subscription service for changes to wavelets that can cause

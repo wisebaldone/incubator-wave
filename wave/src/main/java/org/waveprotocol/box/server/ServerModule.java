@@ -42,11 +42,11 @@ import org.waveprotocol.wave.federation.FederationHostBridge;
 import org.waveprotocol.wave.federation.FederationRemoteBridge;
 import org.waveprotocol.wave.federation.WaveletFederationListener;
 import org.waveprotocol.wave.federation.WaveletFederationProvider;
-import org.waveprotocol.wave.model.id.IdGenerator;
-import org.waveprotocol.wave.model.id.IdGeneratorImpl;
-import org.waveprotocol.wave.model.id.IdGeneratorImpl.Seed;
-import org.waveprotocol.wave.model.id.TokenGenerator;
-import org.waveprotocol.wave.model.id.TokenGeneratorImpl;
+import org.apache.wave.server.model.id.IdGenerator;
+import org.apache.wave.server.model.id.IdGeneratorImpl;
+import org.apache.wave.server.model.id.IdGeneratorImpl.Seed;
+import org.apache.wave.server.model.id.TokenGenerator;
+import org.apache.wave.server.model.id.TokenGeneratorImpl;
 
 import java.security.SecureRandom;
 import java.util.Arrays;

@@ -20,7 +20,7 @@
 package org.waveprotocol.box.server.persistence;
 
 import org.waveprotocol.box.server.account.AccountData;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Interface for the storage and retrieval of {@link AccountData}s.

@@ -25,8 +25,8 @@ import org.waveprotocol.wave.federation.Proto.ProtocolWaveletDelta;
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletOperation;
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletOperation.MutateDocument;
 import org.waveprotocol.wave.media.model.AttachmentId;
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.image.ImageConstants;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.image.ImageConstants;
 
 import java.util.ArrayList;
 import java.util.HashSet;

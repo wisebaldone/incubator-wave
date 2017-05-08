@@ -18,7 +18,7 @@
  */
 package org.waveprotocol.box.stat;
 
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Represents the current session.

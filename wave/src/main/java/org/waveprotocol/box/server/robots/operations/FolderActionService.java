@@ -28,10 +28,10 @@ import com.google.wave.api.OperationRequest;
 
 import org.waveprotocol.box.server.robots.OperationContext;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ObservableConversation;
-import org.waveprotocol.wave.model.supplement.SupplementedWave;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ObservableConversation;
+import org.apache.wave.server.model.supplement.SupplementedWave;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.util.Map;
 

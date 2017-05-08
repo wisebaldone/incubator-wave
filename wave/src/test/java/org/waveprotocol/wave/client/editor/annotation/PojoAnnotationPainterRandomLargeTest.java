@@ -20,11 +20,11 @@
 package org.waveprotocol.wave.client.editor.annotation;
 
 
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
-import org.waveprotocol.wave.model.document.util.ContextProviders.TestDocumentContext;
-import org.waveprotocol.wave.model.testing.RandomDocOpGenerator.RandomProvider;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.util.ContextProviders.TestDocumentContext;
+import org.apache.wave.server.model.testing.RandomDocOpGenerator.RandomProvider;
 
 import java.util.Random;
 

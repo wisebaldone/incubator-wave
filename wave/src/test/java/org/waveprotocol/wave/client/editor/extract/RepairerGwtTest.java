@@ -30,9 +30,9 @@ import org.waveprotocol.wave.client.editor.content.ContentRawDocument;
 import org.waveprotocol.wave.client.editor.content.ContentTextNode;
 import org.waveprotocol.wave.client.editor.testing.TestEditors;
 
-import org.waveprotocol.wave.model.document.ReadableDocument;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.Point.El;
+import org.apache.wave.server.model.document.ReadableDocument;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.Point.El;
 
 /**
  * Test the repairer

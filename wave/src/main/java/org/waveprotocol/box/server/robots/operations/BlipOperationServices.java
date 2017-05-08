@@ -34,20 +34,20 @@ import com.google.wave.api.event.WaveletBlipCreatedEvent;
 import org.waveprotocol.box.server.robots.OperationContext;
 import org.waveprotocol.box.server.robots.util.ConversationUtil;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ObservableConversation;
-import org.waveprotocol.wave.model.conversation.ObservableConversationBlip;
-import org.waveprotocol.wave.model.conversation.ObservableConversationView;
-import org.waveprotocol.wave.model.conversation.WaveletBasedConversation;
-import org.waveprotocol.wave.model.document.Doc;
-import org.waveprotocol.wave.model.document.Document;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.wave.ObservableWavelet;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.opbased.OpBasedWavelet;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ObservableConversation;
+import org.apache.wave.server.model.conversation.ObservableConversationBlip;
+import org.apache.wave.server.model.conversation.ObservableConversationView;
+import org.apache.wave.server.model.conversation.WaveletBasedConversation;
+import org.apache.wave.server.model.document.Doc;
+import org.apache.wave.server.model.document.Document;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.wave.ObservableWavelet;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.opbased.OpBasedWavelet;
 
 /**
  * {@link OperationService} for methods that create or deletes a blip.

@@ -24,10 +24,10 @@ import static junit.framework.Assert.assertTrue;
 
 import org.waveprotocol.wave.concurrencycontrol.common.ChannelException;
 import org.waveprotocol.wave.concurrencycontrol.testing.CcTestingUtils;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.operation.wave.WaveletDelta;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.operation.wave.WaveletDelta;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
 
 import java.util.LinkedList;
 import java.util.List;

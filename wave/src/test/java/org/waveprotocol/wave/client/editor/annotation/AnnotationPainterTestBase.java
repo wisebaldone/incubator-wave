@@ -28,19 +28,19 @@ import org.waveprotocol.wave.client.scheduler.testing.FakeTimerService;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.indexed.AnnotationSetListener;
-import org.waveprotocol.wave.model.document.operation.automaton.DocumentSchema;
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
-import org.waveprotocol.wave.model.document.util.ContextProviders;
-import org.waveprotocol.wave.model.document.util.ContextProviders.TestDocumentContext;
-import org.waveprotocol.wave.model.document.util.LocalDocument;
-import org.waveprotocol.wave.model.document.util.PersistentContent;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.util.CollectionUtils;
-import org.waveprotocol.wave.model.util.ReadableStringSet;
-import org.waveprotocol.wave.model.util.ReadableStringSet.Proc;
+import org.apache.wave.server.model.document.indexed.AnnotationSetListener;
+import org.apache.wave.server.model.document.operation.automaton.DocumentSchema;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.util.ContextProviders;
+import org.apache.wave.server.model.document.util.ContextProviders.TestDocumentContext;
+import org.apache.wave.server.model.document.util.LocalDocument;
+import org.apache.wave.server.model.document.util.PersistentContent;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.util.CollectionUtils;
+import org.apache.wave.server.model.util.ReadableStringSet;
+import org.apache.wave.server.model.util.ReadableStringSet.Proc;
 
 import java.util.HashMap;
 import java.util.Map;

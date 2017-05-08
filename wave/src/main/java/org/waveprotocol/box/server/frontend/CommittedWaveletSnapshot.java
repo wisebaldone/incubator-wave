@@ -22,8 +22,8 @@ package org.waveprotocol.box.server.frontend;
 
 import com.google.common.base.Preconditions;
 
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 
 /**
  * A wavelet snapshot with committed version.

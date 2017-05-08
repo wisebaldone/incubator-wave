@@ -30,7 +30,7 @@ import org.waveprotocol.box.server.shutdown.ShutdownPriority;
 import org.waveprotocol.box.server.shutdown.Shutdownable;
 import org.waveprotocol.box.stat.RequestScope;
 import org.waveprotocol.box.stat.Timing;
-import org.waveprotocol.wave.model.util.Preconditions;
+import org.apache.wave.server.model.util.Preconditions;
 
 /**
  * Session-based request scope executor.

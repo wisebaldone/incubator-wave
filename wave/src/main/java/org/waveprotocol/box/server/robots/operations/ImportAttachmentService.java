@@ -26,14 +26,17 @@ import com.google.wave.api.ApiIdSerializer;
 import com.google.wave.api.JsonRpcConstant.ParamsProperty;
 import com.google.wave.api.impl.RawAttachmentData;
 
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
 import org.waveprotocol.box.server.robots.OperationContext;
 import org.waveprotocol.box.server.attachment.AttachmentService;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
-import org.waveprotocol.wave.model.wave.InvalidParticipantAddress;
+import org.apache.wave.server.model.wave.InvalidParticipantAddress;
 import org.waveprotocol.wave.util.logging.Log;
 import org.waveprotocol.wave.media.model.AttachmentId;
-import org.waveprotocol.wave.model.id.*;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.io.IOException;
 import java.io.ByteArrayInputStream;

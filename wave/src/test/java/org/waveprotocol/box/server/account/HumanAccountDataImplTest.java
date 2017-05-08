@@ -22,7 +22,7 @@ package org.waveprotocol.box.server.account;
 import junit.framework.TestCase;
 
 import org.waveprotocol.box.server.authentication.PasswordDigest;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * @author josephg@gmail.com (Joseph Gentle)

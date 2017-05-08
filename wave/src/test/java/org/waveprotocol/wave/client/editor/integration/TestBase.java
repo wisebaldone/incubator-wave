@@ -32,12 +32,12 @@ import org.waveprotocol.wave.client.editor.testtools.Abbreviations;
 import org.waveprotocol.wave.client.editor.testtools.ContentWithSelection;
 import org.waveprotocol.wave.client.editor.testtools.EditorAssert;
 import org.waveprotocol.wave.common.logging.LoggerBundle;
-import org.waveprotocol.wave.model.document.operation.automaton.DocumentSchema;
-import org.waveprotocol.wave.model.document.util.DocProviders;
-import org.waveprotocol.wave.model.document.util.FocusedRange;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.schema.conversation.ConversationSchemas;
+import org.apache.wave.server.model.document.operation.automaton.DocumentSchema;
+import org.apache.wave.server.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.FocusedRange;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.schema.conversation.ConversationSchemas;
 
 import java.util.List;
 

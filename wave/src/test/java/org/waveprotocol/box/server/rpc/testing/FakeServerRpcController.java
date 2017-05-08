@@ -24,7 +24,7 @@ import static org.waveprotocol.box.server.util.testing.TestingConstants.USER;
 import com.google.protobuf.RpcCallback;
 
 import org.waveprotocol.box.server.rpc.ServerRpcController;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 
 /**

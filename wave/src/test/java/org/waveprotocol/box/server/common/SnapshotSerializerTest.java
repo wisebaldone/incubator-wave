@@ -23,12 +23,12 @@ import junit.framework.TestCase;
 
 import org.waveprotocol.box.common.comms.WaveClientRpc.WaveletSnapshot;
 import org.waveprotocol.box.server.util.TestDataUtil;
-import org.waveprotocol.wave.model.id.IdURIEncoderDecoder;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.version.HashedVersionFactory;
-import org.waveprotocol.wave.model.version.HashedVersionFactoryImpl;
-import org.waveprotocol.wave.model.wave.data.WaveletData;
+import org.apache.wave.server.model.id.IdURIEncoderDecoder;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersionFactory;
+import org.apache.wave.server.model.version.HashedVersionFactoryImpl;
+import org.apache.wave.server.model.wave.data.WaveletData;
 import org.waveprotocol.wave.util.escapers.jvm.JavaUrlCodec;
 
 /**

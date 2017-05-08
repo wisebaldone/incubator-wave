@@ -25,11 +25,11 @@ import com.google.common.collect.Maps;
 import com.google.common.collect.Ordering;
 import com.google.common.collect.Sets;
 
-import org.waveprotocol.wave.model.id.IdUtil;
-import org.waveprotocol.wave.model.wave.InvalidParticipantAddress;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
-import org.waveprotocol.wave.model.wave.data.WaveViewData;
+import org.apache.wave.server.model.id.IdUtil;
+import org.apache.wave.server.model.wave.InvalidParticipantAddress;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.wave.data.WaveViewData;
 
 import java.util.Collections;
 import java.util.Comparator;

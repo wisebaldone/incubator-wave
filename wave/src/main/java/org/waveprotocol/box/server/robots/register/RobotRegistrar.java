@@ -22,7 +22,7 @@ package org.waveprotocol.box.server.robots.register;
 import org.waveprotocol.box.server.account.RobotAccountData;
 import org.waveprotocol.box.server.persistence.PersistenceException;
 import org.waveprotocol.box.server.robots.util.RobotsUtil.RobotRegistrationException;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Provides robot un/registration services.

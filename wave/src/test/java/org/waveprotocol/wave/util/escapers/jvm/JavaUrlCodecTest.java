@@ -21,7 +21,7 @@ package org.waveprotocol.wave.util.escapers.jvm;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.id.URIEncoderDecoder;
+import org.apache.wave.server.model.id.URIEncoderDecoder;
 
 /**
  * Tests {@link JavaUrlCodec}.

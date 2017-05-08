@@ -21,22 +21,22 @@ package org.waveprotocol.wave.client.editor.util;
 
 import org.waveprotocol.wave.client.editor.content.misc.CaretAnnotations;
 import org.waveprotocol.wave.client.editor.content.misc.CaretAnnotations.AnnotationResolver;
-import org.waveprotocol.wave.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.DocProviders;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.AnnotationBehaviour;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.AnnotationFamily;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.BiasDirection;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.ContentType;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.CursorDirection;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.DefaultAnnotationBehaviour;
-import org.waveprotocol.wave.model.document.MutableDocument;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.util.AnnotationRegistry;
-import org.waveprotocol.wave.model.document.util.AnnotationRegistryImpl;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.util.StringMap;
+import org.apache.wave.server.model.document.AnnotationBehaviour;
+import org.apache.wave.server.model.document.AnnotationBehaviour.AnnotationFamily;
+import org.apache.wave.server.model.document.AnnotationBehaviour.BiasDirection;
+import org.apache.wave.server.model.document.AnnotationBehaviour.ContentType;
+import org.apache.wave.server.model.document.AnnotationBehaviour.CursorDirection;
+import org.apache.wave.server.model.document.AnnotationBehaviour.DefaultAnnotationBehaviour;
+import org.apache.wave.server.model.document.MutableDocument;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.util.AnnotationRegistry;
+import org.apache.wave.server.model.document.util.AnnotationRegistryImpl;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.util.StringMap;
 
 /** Check a number of different inheritence cases. */
 

@@ -22,7 +22,6 @@ package org.waveprotocol.box.server.robots.dataapi;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
 import com.google.common.cache.CacheBuilder;
-import com.google.common.collect.MapMaker;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
@@ -32,8 +31,8 @@ import net.oauth.OAuthConsumer;
 import net.oauth.OAuthProblemException;
 
 import org.waveprotocol.box.server.util.OAuthUtil;
-import org.waveprotocol.wave.model.id.TokenGenerator;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.TokenGenerator;
+import org.apache.wave.server.model.wave.ParticipantId;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.util.concurrent.ConcurrentMap;

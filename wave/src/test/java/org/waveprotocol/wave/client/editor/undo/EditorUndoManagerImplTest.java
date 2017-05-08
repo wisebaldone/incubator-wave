@@ -24,21 +24,21 @@ import org.waveprotocol.wave.client.editor.EditorUndoManagerImpl;
 import org.waveprotocol.wave.client.editor.Responsibility;
 import org.waveprotocol.wave.client.editor.ResponsibilityManagerImpl;
 import org.waveprotocol.wave.client.editor.testing.DocumentFreeSelectionHelper;
-import org.waveprotocol.wave.model.undo.UndoManagerFactory;
-import org.waveprotocol.wave.model.document.util.DocProviders;
+import org.apache.wave.server.model.undo.UndoManagerFactory;
+import org.apache.wave.server.model.document.util.DocProviders;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.indexed.IndexedDocument;
-import org.waveprotocol.wave.model.document.operation.DocOp;
-import org.waveprotocol.wave.model.document.operation.impl.DocOpBuilder;
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
-import org.waveprotocol.wave.model.document.util.FocusedRange;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.SilentOperationSink;
+import org.apache.wave.server.model.document.indexed.IndexedDocument;
+import org.apache.wave.server.model.document.operation.DocOp;
+import org.apache.wave.server.model.document.operation.impl.DocOpBuilder;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.util.FocusedRange;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.SilentOperationSink;
 
 
 public class EditorUndoManagerImplTest extends TestCase {

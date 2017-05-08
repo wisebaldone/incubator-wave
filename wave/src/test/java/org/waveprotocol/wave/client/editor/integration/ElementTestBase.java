@@ -27,7 +27,7 @@ import org.waveprotocol.wave.client.editor.EditorTestingUtil;
 import org.waveprotocol.wave.client.editor.event.EditorEvent;
 import org.waveprotocol.wave.client.editor.testing.FakeEditorEvent;
 
-import org.waveprotocol.wave.model.operation.OperationException;
+import org.apache.wave.server.model.operation.OperationException;
 
 /**
  * Base test case for Element tests

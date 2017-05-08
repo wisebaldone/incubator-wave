@@ -23,12 +23,12 @@ import org.waveprotocol.wave.concurrencycontrol.testing.MockOperationChannel;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.operation.wave.BasicWaveletOperationContextFactory;
-import org.waveprotocol.wave.model.operation.wave.NoOp;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperationContext;
-import org.waveprotocol.wave.model.util.CollectionUtils;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.operation.wave.BasicWaveletOperationContextFactory;
+import org.apache.wave.server.model.operation.wave.NoOp;
+import org.apache.wave.server.model.operation.wave.WaveletOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperationContext;
+import org.apache.wave.server.model.util.CollectionUtils;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.util.Queue;
 

@@ -18,7 +18,7 @@
  */
 package org.waveprotocol.box.stat;
 
-import org.waveprotocol.wave.model.util.Preconditions;
+import org.apache.wave.server.model.util.Preconditions;
 
 /**
  * A timer for call.

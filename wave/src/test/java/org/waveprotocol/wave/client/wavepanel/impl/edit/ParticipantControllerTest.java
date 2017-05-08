@@ -21,8 +21,8 @@ package org.waveprotocol.wave.client.wavepanel.impl.edit;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.wave.InvalidParticipantAddress;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.InvalidParticipantAddress;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Tests for the {@link ParticipantController} class.

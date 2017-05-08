@@ -27,7 +27,7 @@ import com.google.gwt.user.client.ui.RootPanel;
 import org.waveprotocol.wave.client.common.safehtml.EscapeUtils;
 import org.waveprotocol.wave.client.common.safehtml.SafeHtml;
 import org.waveprotocol.wave.client.wavepanel.event.EventDispatcherPanel.HandlerCollection;
-import org.waveprotocol.wave.model.util.Pair;
+import org.apache.wave.server.model.util.Pair;
 
 import java.util.ArrayList;
 import java.util.Arrays;

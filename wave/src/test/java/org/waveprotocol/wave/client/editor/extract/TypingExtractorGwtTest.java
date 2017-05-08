@@ -45,7 +45,7 @@ import org.waveprotocol.wave.client.scheduler.Scheduler.Schedulable;
 import org.waveprotocol.wave.client.scheduler.Scheduler.Task;
 import org.waveprotocol.wave.client.scheduler.TimerService;
 
-import org.waveprotocol.wave.model.document.util.Point;
+import org.apache.wave.server.model.document.util.Point;
 
 import java.util.ArrayList;
 import java.util.List;

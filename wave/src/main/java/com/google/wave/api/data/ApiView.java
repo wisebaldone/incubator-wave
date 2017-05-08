@@ -27,16 +27,16 @@ import com.google.wave.api.ElementType;
 import com.google.wave.api.Gadget;
 import com.google.wave.api.Line;
 
-import org.waveprotocol.wave.model.conversation.Blips;
-import org.waveprotocol.wave.model.document.Doc;
-import org.waveprotocol.wave.model.document.Doc.E;
-import org.waveprotocol.wave.model.document.Doc.N;
-import org.waveprotocol.wave.model.document.Doc.T;
-import org.waveprotocol.wave.model.document.Document;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.util.Pair;
-import org.waveprotocol.wave.model.wave.Wavelet;
+import org.apache.wave.server.model.conversation.Blips;
+import org.apache.wave.server.model.document.Doc;
+import org.apache.wave.server.model.document.Doc.E;
+import org.apache.wave.server.model.document.Doc.N;
+import org.apache.wave.server.model.document.Doc.T;
+import org.apache.wave.server.model.document.Document;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.util.Pair;
+import org.apache.wave.server.model.wave.Wavelet;
 
 import java.util.List;
 

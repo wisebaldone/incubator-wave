@@ -45,8 +45,8 @@ import net.oauth.OAuthValidator;
 import net.oauth.OAuth.Parameter;
 
 import org.waveprotocol.box.server.authentication.SessionManager;
-import org.waveprotocol.wave.model.id.TokenGenerator;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.TokenGenerator;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.io.IOException;
 import java.io.PrintWriter;

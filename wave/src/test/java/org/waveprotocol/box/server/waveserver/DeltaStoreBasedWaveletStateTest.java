@@ -22,7 +22,7 @@ package org.waveprotocol.box.server.waveserver;
 import com.google.common.util.concurrent.MoreExecutors;
 
 import org.waveprotocol.box.server.persistence.memory.MemoryDeltaStore;
-import org.waveprotocol.wave.model.id.WaveletName;
+import org.apache.wave.server.model.id.WaveletName;
 
 import java.util.concurrent.Executor;
 

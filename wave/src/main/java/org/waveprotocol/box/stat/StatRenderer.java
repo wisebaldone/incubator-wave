@@ -27,7 +27,7 @@ import java.util.Comparator;
 import java.util.List;
 import org.waveprotocol.box.stat.Statistic.Entry;
 
-import org.waveprotocol.wave.model.util.Pair;
+import org.apache.wave.server.model.util.Pair;
 
 /**
  * Renderer for statistic.

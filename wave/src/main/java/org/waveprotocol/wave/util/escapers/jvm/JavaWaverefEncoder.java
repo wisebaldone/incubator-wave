@@ -19,10 +19,10 @@
 
 package org.waveprotocol.wave.util.escapers.jvm;
 
-import org.waveprotocol.wave.model.waveref.InvalidWaveRefException;
-import org.waveprotocol.wave.model.waveref.WaveRef;
-import org.waveprotocol.wave.model.waveref.WaverefEncoder;
-import org.waveprotocol.wave.model.waveref.WaverefEncoder.PercentEncoderDecoder;
+import org.apache.wave.server.model.waveref.InvalidWaveRefException;
+import org.apache.wave.server.model.waveref.WaveRef;
+import org.apache.wave.server.model.waveref.WaverefEncoder;
+import org.apache.wave.server.model.waveref.WaverefEncoder.PercentEncoderDecoder;
 import org.waveprotocol.wave.util.escapers.PercentEscaper;
 
 import java.io.UnsupportedEncodingException;

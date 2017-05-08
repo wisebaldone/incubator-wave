@@ -24,8 +24,8 @@ import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertNull;
 
 import org.waveprotocol.wave.concurrencycontrol.common.DeltaPair;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperation;
-import org.waveprotocol.wave.model.util.CollectionUtils;
+import org.apache.wave.server.model.operation.wave.WaveletOperation;
+import org.apache.wave.server.model.util.CollectionUtils;
 
 import java.util.Arrays;
 import java.util.Collections;

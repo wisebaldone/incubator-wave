@@ -21,18 +21,18 @@ package org.waveprotocol.wave.concurrencycontrol.client;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.operation.DocOp;
-import org.waveprotocol.wave.model.document.operation.Nindo;
-import org.waveprotocol.wave.model.document.operation.SuperSink;
-import org.waveprotocol.wave.model.document.util.DocProviders;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.wave.AddParticipant;
-import org.waveprotocol.wave.model.operation.wave.BlipContentOperation;
-import org.waveprotocol.wave.model.operation.wave.SubmitBlip;
-import org.waveprotocol.wave.model.operation.wave.WaveletBlipOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperation;
-import org.waveprotocol.wave.model.operation.wave.WaveletOperationContext;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.document.operation.DocOp;
+import org.apache.wave.server.model.document.operation.Nindo;
+import org.apache.wave.server.model.document.operation.SuperSink;
+import org.apache.wave.server.model.document.util.DocProviders;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.wave.AddParticipant;
+import org.apache.wave.server.model.operation.wave.BlipContentOperation;
+import org.apache.wave.server.model.operation.wave.SubmitBlip;
+import org.apache.wave.server.model.operation.wave.WaveletBlipOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperation;
+import org.apache.wave.server.model.operation.wave.WaveletOperationContext;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.util.Arrays;
 import java.util.HashMap;

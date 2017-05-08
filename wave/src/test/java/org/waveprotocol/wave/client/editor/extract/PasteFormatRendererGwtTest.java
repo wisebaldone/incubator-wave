@@ -36,10 +36,10 @@ import org.waveprotocol.wave.client.editor.content.paragraph.LineRendering;
 import org.waveprotocol.wave.client.editor.testing.ContentSerialisationUtil;
 import org.waveprotocol.wave.client.editor.testing.TestInlineDoodad;
 import org.waveprotocol.wave.client.widget.popup.simple.Popup;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.ReadableDocumentView;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.ReadableDocumentView;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
 
 /**
  * Tests for PasteFormatRenderer

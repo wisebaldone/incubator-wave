@@ -27,13 +27,13 @@ import static org.waveprotocol.wave.client.editor.util.EditorAnnotationUtil.supp
 
 import org.waveprotocol.wave.client.editor.content.misc.CaretAnnotations;
 import org.waveprotocol.wave.client.editor.content.misc.CaretAnnotations.AnnotationResolver;
-import org.waveprotocol.wave.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.DocProviders;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.MutableDocument;
-import org.waveprotocol.wave.model.util.CollectionUtils;
-import org.waveprotocol.wave.model.util.StringSet;
+import org.apache.wave.server.model.document.MutableDocument;
+import org.apache.wave.server.model.util.CollectionUtils;
+import org.apache.wave.server.model.util.StringSet;
 
 /**
  * Tests the methods in EditorAnnotationUtilTest, paired up with the context and direct versions

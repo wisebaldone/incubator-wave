@@ -28,7 +28,7 @@ import org.waveprotocol.wave.client.widget.toolbar.buttons.ToolbarToggleButton;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.util.CollectionUtils;
+import org.apache.wave.server.model.util.CollectionUtils;
 
 import java.util.List;
 

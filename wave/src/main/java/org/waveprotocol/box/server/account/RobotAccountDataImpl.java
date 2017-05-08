@@ -22,7 +22,7 @@ package org.waveprotocol.box.server.account;
 import com.google.common.base.Preconditions;
 
 import org.waveprotocol.box.server.robots.RobotCapabilities;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Robot Account implementation.

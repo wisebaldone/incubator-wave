@@ -33,14 +33,14 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.waveprotocol.box.server.robots.operations.TestingWaveletData;
 import org.waveprotocol.box.server.robots.util.ConversationUtil;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ObservableConversationView;
-import org.waveprotocol.wave.model.id.IdGenerator;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.supplement.SupplementedWave;
-import org.waveprotocol.wave.model.wave.ObservableWavelet;
-import org.waveprotocol.wave.model.wave.data.ObservableWaveletData;
-import org.waveprotocol.wave.model.wave.opbased.OpBasedWavelet;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ObservableConversationView;
+import org.apache.wave.server.model.id.IdGenerator;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.supplement.SupplementedWave;
+import org.apache.wave.server.model.wave.ObservableWavelet;
+import org.apache.wave.server.model.wave.data.ObservableWaveletData;
+import org.apache.wave.server.model.wave.opbased.OpBasedWavelet;
 
 /**
  * Unit tests for {@link WaveDigester}.

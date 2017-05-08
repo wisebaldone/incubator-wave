@@ -32,16 +32,16 @@ import com.google.wave.api.impl.WaveletData;
 import org.waveprotocol.box.server.robots.OperationContext;
 import org.waveprotocol.box.server.robots.RobotWaveletData;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
-import org.waveprotocol.wave.model.conversation.ObservableConversationBlip;
-import org.waveprotocol.wave.model.conversation.ObservableConversationView;
-import org.waveprotocol.wave.model.conversation.WaveletBasedConversation;
-import org.waveprotocol.wave.model.id.InvalidIdException;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.wave.InvalidParticipantAddress;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.opbased.OpBasedWavelet;
+import org.apache.wave.server.model.conversation.ObservableConversationBlip;
+import org.apache.wave.server.model.conversation.ObservableConversationView;
+import org.apache.wave.server.model.conversation.WaveletBasedConversation;
+import org.apache.wave.server.model.id.InvalidIdException;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.wave.InvalidParticipantAddress;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.opbased.OpBasedWavelet;
 
 import java.util.List;
 
@@ -59,7 +59,7 @@ public class CreateWaveletService implements OperationService {
    * Creates a new wavelet that is conversational based on the given
    * {@link WaveletData}. Note that this is the robot api version of wavelet
    * data not to be confused with
-   * {@link org.waveprotocol.wave.model.wave.data.WaveletData}.
+   * {@link org.apache.wave.server.model.wave.data.WaveletData}.
    *
    * <p>
    * The wavelet data must define the wave id in the temporary format otherwise

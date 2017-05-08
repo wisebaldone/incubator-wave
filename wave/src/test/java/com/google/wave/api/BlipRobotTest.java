@@ -32,8 +32,8 @@ import com.google.wave.api.impl.DocumentModifyAction.BundledAnnotation;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.util.ArrayList;
 import java.util.Arrays;

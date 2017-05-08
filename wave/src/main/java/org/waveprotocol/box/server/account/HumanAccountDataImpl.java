@@ -22,7 +22,7 @@ package org.waveprotocol.box.server.account;
 import com.google.common.base.Preconditions;
 
 import org.waveprotocol.box.server.authentication.PasswordDigest;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Human Account. Expected to be expanded when authentication is implemented.

@@ -26,19 +26,19 @@ import com.google.wave.api.impl.EventMessageBundle;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.conversation.Blips;
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ConversationView;
-import org.waveprotocol.wave.model.conversation.WaveBasedConversationView;
-import org.waveprotocol.wave.model.document.operation.impl.DocInitializationBuilder;
-import org.waveprotocol.wave.model.id.IdGenerator;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.testing.BasicFactories;
-import org.waveprotocol.wave.model.testing.FakeIdGenerator;
-import org.waveprotocol.wave.model.wave.Wavelet;
-import org.waveprotocol.wave.model.wave.opbased.ObservableWaveView;
+import org.apache.wave.server.model.conversation.Blips;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationView;
+import org.apache.wave.server.model.conversation.WaveBasedConversationView;
+import org.apache.wave.server.model.document.operation.impl.DocInitializationBuilder;
+import org.apache.wave.server.model.id.IdGenerator;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.testing.BasicFactories;
+import org.apache.wave.server.model.testing.FakeIdGenerator;
+import org.apache.wave.server.model.wave.Wavelet;
+import org.apache.wave.server.model.wave.opbased.ObservableWaveView;
 
 /**
  * Test cases for {@link EventDataConverterV21}.

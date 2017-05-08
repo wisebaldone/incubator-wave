@@ -19,7 +19,7 @@
 
 package org.waveprotocol.box.server.shutdown;
 
-import org.waveprotocol.wave.model.util.Preconditions;
+import org.apache.wave.server.model.util.Preconditions;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;

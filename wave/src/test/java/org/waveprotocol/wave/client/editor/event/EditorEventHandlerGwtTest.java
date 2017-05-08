@@ -42,10 +42,10 @@ import org.waveprotocol.wave.client.editor.content.FocusedContentRange;
 import org.waveprotocol.wave.client.editor.content.NodeEventRouter;
 import org.waveprotocol.wave.client.editor.testing.FakeEditorEvent;
 import org.waveprotocol.wave.client.scheduler.testing.FakeTimerService;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.CursorDirection;
-import org.waveprotocol.wave.model.document.util.FocusedPointRange;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.PointRange;
+import org.apache.wave.server.model.document.AnnotationBehaviour.CursorDirection;
+import org.apache.wave.server.model.document.util.FocusedPointRange;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.PointRange;
 
 import java.util.ArrayList;
 import java.util.Arrays;

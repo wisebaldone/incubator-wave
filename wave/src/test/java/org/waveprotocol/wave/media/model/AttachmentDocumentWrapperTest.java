@@ -24,9 +24,9 @@ import junit.framework.TestCase;
 
 import org.waveprotocol.wave.media.model.Attachment.ImageMetadata;
 import org.waveprotocol.wave.media.model.Attachment.Status;
-import org.waveprotocol.wave.model.document.Doc;
-import org.waveprotocol.wave.model.document.ObservableDocument;
-import org.waveprotocol.wave.model.testing.BasicFactories;
+import org.apache.wave.server.model.document.Doc;
+import org.apache.wave.server.model.document.ObservableDocument;
+import org.apache.wave.server.model.testing.BasicFactories;
 
 /**
  * Tests that the AttachmentDocumentWrapper correctly passes data to and from its underlying

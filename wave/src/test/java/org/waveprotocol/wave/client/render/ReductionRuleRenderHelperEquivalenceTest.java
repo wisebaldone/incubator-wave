@@ -22,16 +22,16 @@ package org.waveprotocol.wave.client.render;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ConversationThread;
-import org.waveprotocol.wave.model.conversation.ConversationView;
-import org.waveprotocol.wave.model.conversation.testing.FakeConversationView;
-import org.waveprotocol.wave.model.document.Document;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.util.IdentityMap;
-import org.waveprotocol.wave.model.util.StringMap;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationThread;
+import org.apache.wave.server.model.conversation.ConversationView;
+import org.apache.wave.server.model.conversation.testing.FakeConversationView;
+import org.apache.wave.server.model.document.Document;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.util.IdentityMap;
+import org.apache.wave.server.model.util.StringMap;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * Tests the equivalence between using the direct rendering mechanism (

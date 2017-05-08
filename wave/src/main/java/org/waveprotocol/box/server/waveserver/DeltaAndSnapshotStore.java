@@ -20,7 +20,7 @@
 package org.waveprotocol.box.server.waveserver;
 
 import org.waveprotocol.box.server.persistence.PersistenceException;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 
 import java.io.Closeable;
 import java.util.Collection;

@@ -21,17 +21,17 @@ package org.waveprotocol.wave.client.editor.content;
 
 
 import org.waveprotocol.wave.client.editor.testing.TestEditors;
-import org.waveprotocol.wave.model.document.ReadableDocument;
-import org.waveprotocol.wave.model.document.operation.DocOp;
-import org.waveprotocol.wave.model.document.operation.impl.DocOpBuffer;
-import org.waveprotocol.wave.model.document.operation.impl.DocOpUtil;
-import org.waveprotocol.wave.model.document.util.DocHelper;
-import org.waveprotocol.wave.model.document.util.DocProviders;
-import org.waveprotocol.wave.model.document.util.DomOperationUtil;
-import org.waveprotocol.wave.model.document.util.LocalDocument;
-import org.waveprotocol.wave.model.document.util.Point;
-import org.waveprotocol.wave.model.document.util.ReadableTreeWalker;
-import org.waveprotocol.wave.model.operation.SilentOperationSink;
+import org.apache.wave.server.model.document.ReadableDocument;
+import org.apache.wave.server.model.document.operation.DocOp;
+import org.apache.wave.server.model.document.operation.impl.DocOpBuffer;
+import org.apache.wave.server.model.document.operation.impl.DocOpUtil;
+import org.apache.wave.server.model.document.util.DocHelper;
+import org.apache.wave.server.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.DomOperationUtil;
+import org.apache.wave.server.model.document.util.LocalDocument;
+import org.apache.wave.server.model.document.util.Point;
+import org.apache.wave.server.model.document.util.ReadableTreeWalker;
+import org.apache.wave.server.model.operation.SilentOperationSink;
 
 import java.util.Collections;
 import java.util.LinkedList;

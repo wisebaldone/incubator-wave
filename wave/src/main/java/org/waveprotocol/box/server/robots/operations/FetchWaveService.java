@@ -35,12 +35,12 @@ import org.waveprotocol.box.server.robots.OperationContext;
 import org.waveprotocol.box.server.robots.util.ConversationUtil;
 import org.waveprotocol.box.server.robots.util.OperationUtil;
 
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ObservableConversation;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.Wavelet;
-import org.waveprotocol.wave.model.wave.opbased.OpBasedWavelet;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ObservableConversation;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.Wavelet;
+import org.apache.wave.server.model.wave.opbased.OpBasedWavelet;
 
 import java.util.Map;
 

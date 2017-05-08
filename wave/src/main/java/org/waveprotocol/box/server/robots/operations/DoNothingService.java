@@ -24,7 +24,7 @@ import com.google.wave.api.OperationRequest;
 import com.google.wave.api.JsonRpcConstant.ParamsProperty;
 
 import org.waveprotocol.box.server.robots.OperationContext;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 /**
  * {@link OperationService} that just returns an empty response. Used for

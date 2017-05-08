@@ -34,15 +34,15 @@ import com.google.wave.api.Image;
 import com.google.wave.api.Installer;
 import com.google.wave.api.Line;
 
-import org.waveprotocol.wave.model.conversation.Blips;
-import org.waveprotocol.wave.model.document.Doc;
-import org.waveprotocol.wave.model.document.Doc.E;
-import org.waveprotocol.wave.model.document.Doc.N;
-import org.waveprotocol.wave.model.document.Document;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.document.util.XmlStringBuilder;
-import org.waveprotocol.wave.model.id.IdConstants;
-import org.waveprotocol.wave.model.wave.Wavelet;
+import org.apache.wave.server.model.conversation.Blips;
+import org.apache.wave.server.model.document.Doc;
+import org.apache.wave.server.model.document.Doc.E;
+import org.apache.wave.server.model.document.Doc.N;
+import org.apache.wave.server.model.document.Document;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.document.util.XmlStringBuilder;
+import org.apache.wave.server.model.id.IdConstants;
+import org.apache.wave.server.model.wave.Wavelet;
 
 import java.util.List;
 import java.util.Map;

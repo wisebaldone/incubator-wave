@@ -27,8 +27,8 @@ import com.google.common.util.concurrent.SettableFuture;
 import com.google.gwt.thirdparty.guava.common.collect.Maps;
 
 import org.mockito.Mock;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.util.Map;
 

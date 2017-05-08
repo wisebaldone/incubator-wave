@@ -33,12 +33,12 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.waveprotocol.wave.client.scheduler.testing.FakeTimerService;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.supplement.ObservableSupplementedWave;
-import org.waveprotocol.wave.model.wave.Blip;
-import org.waveprotocol.wave.model.wave.ObservableWavelet;
-import org.waveprotocol.wave.model.wave.WaveletListener;
-import org.waveprotocol.wave.model.wave.opbased.ObservableWaveView;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.supplement.ObservableSupplementedWave;
+import org.apache.wave.server.model.wave.Blip;
+import org.apache.wave.server.model.wave.ObservableWavelet;
+import org.apache.wave.server.model.wave.WaveletListener;
+import org.apache.wave.server.model.wave.opbased.ObservableWaveView;
 
 import java.util.Collections;
 

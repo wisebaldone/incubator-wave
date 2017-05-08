@@ -32,7 +32,7 @@ import org.waveprotocol.box.server.robots.OperationContextImpl;
 import org.waveprotocol.box.server.robots.RobotsTestBase;
 import org.waveprotocol.box.server.robots.testing.OperationServiceHelper;
 import org.waveprotocol.box.server.waveserver.WaveletProvider;
-import org.waveprotocol.wave.model.conversation.ObservableConversation;
+import org.apache.wave.server.model.conversation.ObservableConversation;
 
 /**
  * Unit tests for {@link FetchWaveService}.

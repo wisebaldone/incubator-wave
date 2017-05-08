@@ -23,13 +23,12 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
 
 import com.google.gwt.core.client.Scheduler;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.util.Scheduler.Command;
+import org.apache.wave.server.model.util.Scheduler.Command;
 
 /**
  * Test case for {@link IdempotentFinally}.

@@ -20,8 +20,8 @@
 package com.google.wave.api;
 
 
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
 
 import java.io.Serializable;
 import java.util.ArrayList;

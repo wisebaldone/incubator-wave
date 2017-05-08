@@ -22,7 +22,7 @@ package org.waveprotocol.wave.client.scheduler.knobs;
 import junit.framework.TestCase;
 import org.waveprotocol.wave.client.scheduler.Scheduler.Priority;
 import org.waveprotocol.wave.client.scheduler.Scheduler.Schedulable;
-import org.waveprotocol.wave.model.util.ReadableStringSet;
+import org.apache.wave.server.model.util.ReadableStringSet;
 
 import java.util.Collection;
 

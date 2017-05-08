@@ -24,14 +24,14 @@ import junit.framework.TestCase;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.waveprotocol.wave.client.editor.content.Registries;
-import org.waveprotocol.wave.model.document.operation.DocInitialization;
-import org.waveprotocol.wave.model.document.operation.DocOp;
-import org.waveprotocol.wave.model.document.operation.algorithm.Composer;
-import org.waveprotocol.wave.model.document.operation.impl.DocInitializationBuilder;
-import org.waveprotocol.wave.model.document.operation.impl.DocOpBuilder;
-import org.waveprotocol.wave.model.operation.OpComparators;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.OperationRuntimeException;
+import org.apache.wave.server.model.document.operation.DocInitialization;
+import org.apache.wave.server.model.document.operation.DocOp;
+import org.apache.wave.server.model.document.operation.algorithm.Composer;
+import org.apache.wave.server.model.document.operation.impl.DocInitializationBuilder;
+import org.apache.wave.server.model.document.operation.impl.DocOpBuilder;
+import org.apache.wave.server.model.operation.OpComparators;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.OperationRuntimeException;
 
 /**
  * Tests for diff control in LazyContentDocument.

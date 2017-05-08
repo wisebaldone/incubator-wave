@@ -24,7 +24,6 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 import com.google.protobuf.Message;
-import com.google.protobuf.MessageLite;
 import com.google.wave.api.SearchResult;
 import com.google.wave.api.SearchResult.Digest;
 import com.google.wave.api.data.converter.EventDataConverterManager;
@@ -39,7 +38,7 @@ import org.waveprotocol.box.server.rpc.ProtoSerializer.SerializationException;
 import org.waveprotocol.box.server.waveserver.WaveletProvider;
 import org.waveprotocol.box.stat.Timed;
 import org.waveprotocol.box.webclient.search.SearchService;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.io.IOException;

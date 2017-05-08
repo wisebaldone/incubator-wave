@@ -21,31 +21,31 @@ package org.waveprotocol.wave.client.editor.extract;
 
 import org.waveprotocol.wave.client.editor.content.misc.CaretAnnotations;
 import org.waveprotocol.wave.client.editor.content.misc.CaretAnnotations.AnnotationResolver;
-import org.waveprotocol.wave.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.DocProviders;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.AnnotationBehaviour;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.AnnotationFamily;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.BiasDirection;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.ContentType;
-import org.waveprotocol.wave.model.document.AnnotationBehaviour.DefaultAnnotationBehaviour;
-import org.waveprotocol.wave.model.document.MutableDocument;
-import org.waveprotocol.wave.model.document.RangedAnnotation;
-import org.waveprotocol.wave.model.document.operation.Nindo;
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
-import org.waveprotocol.wave.model.document.util.AnnotationRegistry;
-import org.waveprotocol.wave.model.document.util.AnnotationRegistryImpl;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.util.CollectionUtils;
-import org.waveprotocol.wave.model.util.ReadableStringMap;
-import org.waveprotocol.wave.model.util.ReadableStringMap.ProcV;
-import org.waveprotocol.wave.model.util.ReadableStringSet;
-import org.waveprotocol.wave.model.util.StringMap;
-import org.waveprotocol.wave.model.util.StringSet;
-import org.waveprotocol.wave.model.util.ValueUtils;
+import org.apache.wave.server.model.document.AnnotationBehaviour;
+import org.apache.wave.server.model.document.AnnotationBehaviour.AnnotationFamily;
+import org.apache.wave.server.model.document.AnnotationBehaviour.BiasDirection;
+import org.apache.wave.server.model.document.AnnotationBehaviour.ContentType;
+import org.apache.wave.server.model.document.AnnotationBehaviour.DefaultAnnotationBehaviour;
+import org.apache.wave.server.model.document.MutableDocument;
+import org.apache.wave.server.model.document.RangedAnnotation;
+import org.apache.wave.server.model.document.operation.Nindo;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.util.AnnotationRegistry;
+import org.apache.wave.server.model.document.util.AnnotationRegistryImpl;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.util.CollectionUtils;
+import org.apache.wave.server.model.util.ReadableStringMap;
+import org.apache.wave.server.model.util.ReadableStringMap.ProcV;
+import org.apache.wave.server.model.util.ReadableStringSet;
+import org.apache.wave.server.model.util.StringMap;
+import org.apache.wave.server.model.util.StringSet;
+import org.apache.wave.server.model.util.ValueUtils;
 
 import java.util.List;
 

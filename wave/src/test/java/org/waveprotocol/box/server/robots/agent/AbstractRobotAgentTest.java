@@ -31,7 +31,7 @@ import org.apache.commons.cli.CommandLine;
 import org.waveprotocol.box.server.persistence.AccountStore;
 import org.waveprotocol.box.server.robots.agent.AbstractBaseRobotAgent.ServerFrontendAddressHolder;
 import org.waveprotocol.box.server.robots.register.RobotRegistrar;
-import org.waveprotocol.wave.model.id.TokenGenerator;
+import org.apache.wave.server.model.id.TokenGenerator;
 
 /**
  * Unit tests for the {@link AbstractRobotAgent}.

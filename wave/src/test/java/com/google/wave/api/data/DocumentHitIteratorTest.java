@@ -31,20 +31,20 @@ import com.google.wave.api.Restriction;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.conversation.Blips;
-import org.waveprotocol.wave.model.document.Document;
-import org.waveprotocol.wave.model.document.indexed.IndexedDocument;
-import org.waveprotocol.wave.model.document.operation.Nindo;
-import org.waveprotocol.wave.model.document.raw.impl.Element;
-import org.waveprotocol.wave.model.document.raw.impl.Node;
-import org.waveprotocol.wave.model.document.raw.impl.Text;
-import org.waveprotocol.wave.model.document.util.DocProviders;
-import org.waveprotocol.wave.model.document.util.DocumentImpl;
-import org.waveprotocol.wave.model.document.util.LineContainers;
-import org.waveprotocol.wave.model.operation.OperationException;
-import org.waveprotocol.wave.model.operation.OperationRuntimeException;
-import org.waveprotocol.wave.model.operation.OperationSequencer;
-import org.waveprotocol.wave.model.wave.Wavelet;
+import org.apache.wave.server.model.conversation.Blips;
+import org.apache.wave.server.model.document.Document;
+import org.apache.wave.server.model.document.indexed.IndexedDocument;
+import org.apache.wave.server.model.document.operation.Nindo;
+import org.apache.wave.server.model.document.raw.impl.Element;
+import org.apache.wave.server.model.document.raw.impl.Node;
+import org.apache.wave.server.model.document.raw.impl.Text;
+import org.apache.wave.server.model.document.util.DocProviders;
+import org.apache.wave.server.model.document.util.DocumentImpl;
+import org.apache.wave.server.model.document.util.LineContainers;
+import org.apache.wave.server.model.operation.OperationException;
+import org.apache.wave.server.model.operation.OperationRuntimeException;
+import org.apache.wave.server.model.operation.OperationSequencer;
+import org.apache.wave.server.model.wave.Wavelet;
 
 import java.util.Collections;
 import java.util.List;

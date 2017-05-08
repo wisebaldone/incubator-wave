@@ -28,11 +28,11 @@ import org.waveprotocol.wave.client.wavepanel.block.BlockStructure.Node;
 import org.waveprotocol.wave.client.wavepanel.block.BlockStructure.NodeType;
 import org.waveprotocol.wave.client.wavepanel.view.ModelIdMapperImpl;
 import org.waveprotocol.wave.client.wavepanel.view.ViewIdMapper;
-import org.waveprotocol.wave.model.conversation.Conversation;
-import org.waveprotocol.wave.model.conversation.ConversationBlip;
-import org.waveprotocol.wave.model.conversation.ConversationThread;
-import org.waveprotocol.wave.model.conversation.ConversationView;
-import org.waveprotocol.wave.model.conversation.testing.FakeConversationView;
+import org.apache.wave.server.model.conversation.Conversation;
+import org.apache.wave.server.model.conversation.ConversationBlip;
+import org.apache.wave.server.model.conversation.ConversationThread;
+import org.apache.wave.server.model.conversation.ConversationView;
+import org.apache.wave.server.model.conversation.testing.FakeConversationView;
 
 /**
  * Basic tests for a block structure.  Subclasses provude the structure to test.

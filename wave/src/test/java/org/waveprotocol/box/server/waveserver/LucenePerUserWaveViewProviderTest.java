@@ -26,7 +26,7 @@ import com.google.common.collect.ImmutableSet;
 import org.mockito.Mock;
 import org.waveprotocol.box.server.persistence.lucene.IndexDirectory;
 import org.waveprotocol.box.server.persistence.lucene.RAMIndexDirectory;
-import org.waveprotocol.wave.model.wave.data.ReadableWaveletData;
+import org.apache.wave.server.model.wave.data.ReadableWaveletData;
 
 import java.io.IOException;
 import java.util.concurrent.Executors;

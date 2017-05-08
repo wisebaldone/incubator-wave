@@ -23,16 +23,16 @@ import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
 
-import org.waveprotocol.wave.model.document.operation.DocInitialization;
-import org.waveprotocol.wave.model.document.operation.impl.DocInitializationBuilder;
-import org.waveprotocol.wave.model.document.util.DocCompare;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.ParticipantId;
-import org.waveprotocol.wave.model.wave.data.BlipData;
-import org.waveprotocol.wave.model.wave.data.WaveletData;
+import org.apache.wave.server.model.document.operation.DocInitialization;
+import org.apache.wave.server.model.document.operation.impl.DocInitializationBuilder;
+import org.apache.wave.server.model.document.util.DocCompare;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.data.BlipData;
+import org.apache.wave.server.model.wave.data.WaveletData;
 
 import java.util.Collections;
 

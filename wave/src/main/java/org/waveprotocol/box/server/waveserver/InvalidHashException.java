@@ -19,7 +19,7 @@
 
 package org.waveprotocol.box.server.waveserver;
 
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersion;
 
 /**
  * Indicates a caller submitted a delta with a mismatched hash.

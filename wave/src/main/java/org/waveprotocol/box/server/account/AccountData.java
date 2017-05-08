@@ -19,7 +19,7 @@
 
 package org.waveprotocol.box.server.account;
 
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 
 /**

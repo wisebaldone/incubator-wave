@@ -29,15 +29,15 @@ import junit.framework.TestCase;
 
 import org.waveprotocol.box.common.DeltaSequence;
 import org.waveprotocol.box.server.frontend.ClientFrontend.OpenListener;
-import org.waveprotocol.wave.model.id.IdFilter;
-import org.waveprotocol.wave.model.id.IdFilters;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.testing.DeltaTestUtil;
-import org.waveprotocol.wave.model.version.HashedVersion;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.id.IdFilter;
+import org.apache.wave.server.model.id.IdFilters;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.testing.DeltaTestUtil;
+import org.apache.wave.server.model.version.HashedVersion;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.util.ArrayList;
 import java.util.List;

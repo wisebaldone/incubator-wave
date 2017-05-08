@@ -20,9 +20,9 @@
 package org.waveprotocol.box.server.waveserver;
 
 import org.waveprotocol.box.common.ExceptionalIterator;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
 
 /**
  * Base implementation of {@link WaveIndexer}.

@@ -23,7 +23,7 @@ package org.waveprotocol.wave.client.wavepanel.block.pojo;
 import org.waveprotocol.wave.client.wavepanel.block.BlockStructureTestBase;
 import org.waveprotocol.wave.client.wavepanel.view.ModelIdMapperImpl;
 import org.waveprotocol.wave.client.wavepanel.view.ViewIdMapper;
-import org.waveprotocol.wave.model.conversation.ConversationView;
+import org.apache.wave.server.model.conversation.ConversationView;
 
 /**
  * Extends an {@link BlockStructureTestBase}, and runs it against a

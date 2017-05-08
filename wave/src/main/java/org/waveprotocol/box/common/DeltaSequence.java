@@ -22,8 +22,8 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.ForwardingList;
 import com.google.common.collect.ImmutableList;
 
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.version.HashedVersion;
 
 import java.util.List;
 import java.util.RandomAccess;

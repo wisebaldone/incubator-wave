@@ -21,8 +21,8 @@ package org.waveprotocol.wave.client.wave;
 
 import junit.framework.TestCase;
 
-import org.waveprotocol.wave.model.document.operation.DocInitialization;
-import org.waveprotocol.wave.model.document.operation.impl.DocInitializationBuilder;
+import org.apache.wave.server.model.document.operation.DocInitialization;
+import org.apache.wave.server.model.document.operation.impl.DocInitializationBuilder;
 
 /**
  * Tests for {@link SimpleDiffDoc}.

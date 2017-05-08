@@ -28,11 +28,11 @@ import org.waveprotocol.wave.federation.Proto;
 import org.waveprotocol.wave.federation.Proto.ProtocolDocumentOperation.Component.ElementStart;
 import org.waveprotocol.wave.federation.Proto.ProtocolWaveletOperation.MutateDocument;
 import org.waveprotocol.wave.media.model.AttachmentId;
-import org.waveprotocol.wave.model.image.ImageConstants;
+import org.apache.wave.server.model.image.ImageConstants;
 
 import junit.framework.TestCase;
 import org.waveprotocol.box.server.common.CoreWaveletOperationSerializer;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.version.HashedVersion;
 
 /**
  * @author akaplanov@gmail.com (Andrew Kaplanov)

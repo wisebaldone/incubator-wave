@@ -28,7 +28,7 @@ import org.waveprotocol.wave.crypto.DefaultCertPathStore;
 import org.waveprotocol.wave.crypto.SignatureException;
 import org.waveprotocol.wave.crypto.SignerInfo;
 import org.waveprotocol.wave.federation.Proto.ProtocolSignerInfo;
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

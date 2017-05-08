@@ -28,19 +28,17 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
 import org.waveprotocol.box.common.DeltaSequence;
-import org.waveprotocol.wave.model.id.IdFilter;
-import org.waveprotocol.wave.model.id.WaveId;
-import org.waveprotocol.wave.model.id.WaveletId;
-import org.waveprotocol.wave.model.id.WaveletName;
-import org.waveprotocol.wave.model.operation.wave.TransformedWaveletDelta;
-import org.waveprotocol.wave.model.version.HashedVersion;
+import org.apache.wave.server.model.id.IdFilter;
+import org.apache.wave.server.model.id.WaveId;
+import org.apache.wave.server.model.id.WaveletId;
+import org.apache.wave.server.model.id.WaveletName;
+import org.apache.wave.server.model.operation.wave.TransformedWaveletDelta;
+import org.apache.wave.server.model.version.HashedVersion;
 import org.waveprotocol.wave.util.logging.Log;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * A client's subscription to a wave view.

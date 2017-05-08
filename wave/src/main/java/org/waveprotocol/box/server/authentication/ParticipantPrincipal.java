@@ -21,7 +21,7 @@ package org.waveprotocol.box.server.authentication;
 
 import com.google.common.base.Preconditions;
 
-import org.waveprotocol.wave.model.wave.ParticipantId;
+import org.apache.wave.server.model.wave.ParticipantId;
 
 import java.security.Principal;
 
