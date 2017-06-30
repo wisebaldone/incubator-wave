@@ -1,5 +1,5 @@
 
-![Apache Wave](assets/ApacheWaveCircleLogo.svg)
+![Apache Wave](assets/ApacheWaveCircleLogo.svg?raw=true)
 # Apache Wave
 
 | Tool | Status |
