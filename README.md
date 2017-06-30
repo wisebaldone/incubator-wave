@@ -51,7 +51,7 @@ All documentation can be found on the [Apache Wave website](https://incubator.ap
 * Maintainers please find your hub [here](MAINTAINERS.md)
 * Server documentation can be found [here]()
 * Client documentation can be found [here]()
-* Wave Documents documentation can be found [here]()
+* Wave Document format specifications can be found [here]()
 
 ## License
 
