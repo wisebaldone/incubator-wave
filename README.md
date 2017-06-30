@@ -1,5 +1,5 @@
 
-![Apache Wave](assets/ApacheWaveCircleLogo.svg?raw=true)
+![Apache Wave](https://cdn.rawgit.com/wisebaldone/incubator-wave/b26efbae/assets/ApacheWaveCircleLogo.svg)
 # Apache Wave
 
 | Tool | Status |
