@@ -1,4 +1,3 @@
-
 ![Apache Wave](https://cdn.rawgit.com/wisebaldone/incubator-wave/b26efbae/assets/ApacheWaveCircleLogo.svg)
 # Apache Wave
 
@@ -45,6 +44,8 @@ based off the original Google Wave project but is only one of many uses of the
 platform.
 
 ## Getting Started & Documentation
+
+Looking to contribute? checkout [CONTRIBUTING](CONTRIBUTING.md)
 
 All documentation can be found on the [Apache Wave website](https://incubator.apache.org/wave/).
 
