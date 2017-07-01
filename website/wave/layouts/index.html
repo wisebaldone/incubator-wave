@@ -1,0 +1,42 @@
+{{ partial "document_start.html" . }}
+<style>
+  .max-width {
+    width: 980px;
+  }
+</style>
+</head>
+<body>
+{{ partial "header.html" }}
+<header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
+  <div class="mdc-toolbar__row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+      <span class="mdc-toolbar__title">Title</span>
+    </section>
+  </div>
+</header>
+<main class="mdc-toolbar-fixed-adjust">
+  <div class="demo-grid mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        Splash ( logo and description )
+      </div>
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        OT
+      </div>
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        The Box / Server
+      </div>
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        Web Client
+      </div>
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        Incubator
+      </div>
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        Apache
+      </div>
+    </div>
+  </div>
+</main>
+{{ partial "footer.html" }}
+{{ partial "document_end.html" . }}

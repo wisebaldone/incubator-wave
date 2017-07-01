@@ -1,0 +1,5 @@
+baseURL = "https://incubator.apache.org/wave/"
+languageCode = "en-us"
+title = "Apache Wave (Incubating)"
+
+pygmentsuseclasses = true
