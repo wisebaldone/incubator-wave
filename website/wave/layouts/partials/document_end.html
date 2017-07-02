@@ -1,4 +1,12 @@
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
-<script>mdc.autoInit()</script>
+<script>
+  var drawerEl = document.querySelector('.mdc-temporary-drawer');
+  var MDCTemporaryDrawer = mdc.drawer.MDCTemporaryDrawer;
+  var drawer = new MDCTemporaryDrawer(drawerEl);
+  document.querySelector('.demo-menu').addEventListener('click', function() {
+    drawer.open = true;
+  });
+  mdc.autoInit()
+</script>
 </body>
 </html>
