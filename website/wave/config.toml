@@ -1,5 +1,6 @@
 baseURL = "https://incubator.apache.org/wave/"
 languageCode = "en-us"
 title = "Apache Wave (Incubating)"
+copyright = "Copywrite (c) The Apache Software Foundation 2017"
 
 pygmentsuseclasses = true

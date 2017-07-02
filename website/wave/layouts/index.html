@@ -1,74 +1,5 @@
 {{ partial "document_start.html" . }}
 <style>
-  body {
-    margin: 0;
-  }
-
-  /* Mobile only */
-  @media screen and (max-width: 839px) {
-    .show-mobile-only {
-      visibility: visible !important;
-    }
-
-    .hide-mobile-only {
-      visibility: hidden !important;
-      display: none;
-    }
-
-    .mobile-centered {
-      text-align: center;
-    }
-
-    .nav-list li {
-      display: block;
-    }
-  }
-
-  @media screen and (min-width: 840px) {
-    .show-mobile-only {
-      visibility: hidden !important;
-      display: none;
-    }
-
-    .hide-mobile-only {
-      visibility: visible !important;
-    }
-  }
-
-  .mdc-toolbar__row {
-    max-width: 1170px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .mdc-toolbar__title {
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
-
-  .nav-list {
-    margin-top: 30px;
-    margin-bottom: 5px;
-  }
-
-  .nav-list li {
-    list-style: none;
-    display: inline;
-    padding-right: 10px;
-  }
-
-  .toolbar-link:link, .toolbar-link:visited {
-    color: #d2dee4;
-    font-size: 0.9em;
-    text-decoration: none;
-  }
-
-  .toolbar-link:hover {
-    text-decoration: underline;
-  }
-
   .apache {
     background-color: #303284;
     color: white;
@@ -79,93 +10,17 @@
     background-color: var(--mdc-theme-primary, #3f51b5);
     color: white;
   }
-  .center-text {
-    text-align: center;
-  }
-
-  .content-width {
-    max-width: 960px;
-    padding: 100px 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .full-grid {
-    padding: 0;
-  }
 
   .splash-text {
     text-align: left;
-    width: 760px;
+    max-width: 760px;
     margin: 0 auto;
     line-height: 30px;
   }
 </style>
 </head>
 <body>
-{{ partial "header.html" }}
-<header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--platform">
-  <div class="mdc-toolbar__row">
-    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-      <img height="56px" style="padding-top: 5px;" src="assets/ApacheWaveCircleLogo.svg">
-      <span class="mdc-toolbar__title">
-        Apache Wave
-      </span>
-    </section>
-    <section class="mdc-toolbar__section mdc-toolbar__section--align-end hide-mobile-only">
-      <ul class="nav-list">
-        <li><a class="toolbar-link" href="">Home</a></li>
-        <li><a class="toolbar-link" href="">Docs</a></li>
-        <li><a class="toolbar-link" href="">Community</a></li>
-        <li><a class="toolbar-link" href="">Maintainers</a></li>
-        <li><a class="toolbar-link" href="">Apache</a></li>
-        <li><a class="toolbar-link" href="">Download</a></li>
-      </ul>
-    </section>
-    <section class="mdc-toolbar__section mdc-toolbar__section--align-end show-mobile-only">
-      <button class="demo-menu material-icons mdc-toolbar__icon--menu">menu</button>
-    </section>
-  </div>
-</header>
-<aside class="mdc-temporary-drawer">
-  <nav class="mdc-temporary-drawer__drawer">
-    <header class="mdc-temporary-drawer__header">
-      <div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primary-on-primary">
-        Header here
-      </div>
-    </header>
-    <nav class="mdc-temporary-drawer__content mdc-list-group">
-      <div id="icon-with-text-demo" class="mdc-list">
-        <a class="mdc-list-item mdc-temporary-drawer--selected" href="#">
-          <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
-        </a>
-        <a class="mdc-list-item" href="#">
-          <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
-        </a>
-        <a class="mdc-list-item" href="#">
-          <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
-        </a>
-        <a class="mdc-list-item" href="#">
-          <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
-        </a>
-      </div>
-
-      <hr class="mdc-list-divider">
-
-      <div class="mdc-list">
-        <a class="mdc-list-item" href="#">
-          <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
-        </a>
-        <a class="mdc-list-item" href="#">
-          <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
-        </a>
-        <a class="mdc-list-item" href="#">
-          <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Spam
-        </a>
-      </div>
-    </nav>
-  </nav>
-</aside>
+{{ partial "header.html" . }}
 <main class="mdc-toolbar-fixed-adjust">
   <div class="full-grid mdc-layout-grid">
     <div class="mdc-layout-grid__inner">
@@ -174,9 +29,11 @@
           <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <img src="assets/ApacheWaveCircleLogo.svg">
           </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-typography--body1">
+          <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-typography--body1">
             <p class="splash-text">
-              <b>Apache Wave</b> is a distributed, near-real-time, rich collaboration
+              <b>Apache Wave</b> is a distributed, near-real-time, rich
+              collaboration
               platform that allows users to work together in new and exciting
               ways. Wave allows for flexible modes of communication, blending
               chat, email and collaborative document editing in to one seamless
@@ -190,18 +47,40 @@
               much like the Realtime Api offered by Google but for "Host Your
               Own" solutions.
             </p>
+            <br/>
+            <ul class="mdc-list" style="width: 160px; margin: 0 auto; text-align: center">
+              <li class="mdc-list-item">
+                <a href=""
+                   class="mdc-button mdc-button--raised mdc-button--primary">
+                  <i class="material-icons"
+                     style="vertical-align: middle">play_arrow</i>
+                  Get Started
+                </a>
+              </li>
+              <li class="mdc-list-item">
+                <a href=""
+                   class="mdc-button mdc-button--raised mdc-button--primary">
+                  <i class="material-icons"
+                     style="vertical-align: middle">get_app</i>
+                  Download&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 highlighted">
+      <div
+          class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 highlighted">
         <div class="mdc-layout-grid__inner content-width">
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+          <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
             <h1 class="mdc-typography--display1">Client</h1>
             <p>
               The Apache Wave client
             </p>
           </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mobile-centered">
+          <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mobile-centered">
             <img
                 src="https://svn.apache.org/repos/asf/incubator/wave/whitepapers/operational-transform/img/david_ot3.png"
                 alt="Operational Transform Data Graph"
@@ -211,13 +90,15 @@
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
         <div class="mdc-layout-grid__inner content-width">
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+          <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mobile-centered">
             <img
                 src="https://svn.apache.org/repos/asf/incubator/wave/whitepapers/operational-transform/img/david_ot3.png"
                 alt="Operational Transform Data Graph"
                 height="300px">
           </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+          <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
             <h1 class="mdc-typography--display1">Operational Transform</h1>
             <p>
               Description of operational transforms
@@ -225,15 +106,18 @@
           </div>
         </div>
       </div>
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 highlighted">
+      <div
+          class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 highlighted">
         <div class="mdc-layout-grid__inner content-width">
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+          <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
             <h1 class="mdc-typography--display1">Server</h1>
             <p>
               The server....
             </p>
           </div>
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+          <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mobile-centered">
             <img
                 src="https://svn.apache.org/repos/asf/incubator/wave/whitepapers/operational-transform/img/david_ot3.png"
                 alt="Operational Transform Data Graph"
@@ -241,22 +125,28 @@
           </div>
         </div>
       </div>
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 content-width center-text">
+      <div
+          class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 content-width center-text">
         <img
             src="http://incubator.apache.org/images/incubator_feather_egg_logo.png"
             alt="Apache Incubator"
             style="max-width: 460px;">
       </div>
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 apache center-text">
+      <div
+          class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 apache center-text">
         <div class="content-width">
           The apache Incubator/.../....
         </div>
       </div>
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-        Contribute
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-text content-width">
+        <h1 class="mdc-typography--display1">Contribute</h1>
+        <p>
+          Apache Wave is always looking for more participants, visit our
+          community page to find out how to contribute.
+        </p>
       </div>
     </div>
   </div>
 </main>
-{{ partial "footer.html" }}
+{{ partial "footer.html" . }}
 {{ partial "document_end.html" . }}
