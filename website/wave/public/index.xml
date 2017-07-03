@@ -11,5 +11,53 @@
 	<atom:link href="https://incubator.apache.org/wave/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title></title>
+      <link>https://incubator.apache.org/wave/apache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://incubator.apache.org/wave/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://incubator.apache.org/wave/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://incubator.apache.org/wave/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://incubator.apache.org/wave/docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://incubator.apache.org/wave/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://incubator.apache.org/wave/maintainers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://incubator.apache.org/wave/maintainers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Download | Apache Wave</title>
+      <link>https://incubator.apache.org/wave/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://incubator.apache.org/wave/download/</guid>
+      <description>Downloads Releases There have been no official releases of Apache Wave currently.
+In the meantime, please use the code from source, or refer to our last release candidates (for pre-builds) by checking the wave-dev mailing list archives. The latest release candidate of Wave is 0.4-rc10 (posted on 10 October 2014).
+Once compiled, execute the run-server.sh or run-server.bat to start the Wave server.
+When downloading from a mirror, please be sure to verify the checksums and signature (see the MD5 and PGP links above).</description>
+    </item>
+    
   </channel>
 </rss>

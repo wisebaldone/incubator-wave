@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Apache Wave (Incubating)</title>
+    <link>https://incubator.apache.org/wave/docs/</link>
+    <description>Recent content in Docs on Apache Wave (Incubating)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copywrite (c) The Apache Software Foundation 2017</copyright>
+    
+	<atom:link href="https://incubator.apache.org/wave/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://incubator.apache.org/wave/docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://incubator.apache.org/wave/docs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+{{ partial "document_start.html" . }}
+<style>
+</style>
+</head>
+<body>
+{{ partial "header.html" . }}
+<main class="mdc-toolbar-fixed-adjust">
+  <div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 content-width">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</main>
+{{ partial "footer.html" . }}
+{{ partial "document_end.html" . }}

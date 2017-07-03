@@ -7,7 +7,52 @@
   </url>
   
   <url>
+    <loc>https://incubator.apache.org/wave/apache/</loc>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/community/</loc>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/maintainers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/apache/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://incubator.apache.org/wave/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/community/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/docs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/download/</loc>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/download/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incubator.apache.org/wave/maintainers/</loc>
     <priority>0</priority>
   </url>
   

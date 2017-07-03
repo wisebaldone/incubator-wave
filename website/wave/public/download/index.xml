@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Downloads on Apache Wave (Incubating)</title>
+    <link>https://incubator.apache.org/wave/download/</link>
+    <description>Recent content in Downloads on Apache Wave (Incubating)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copywrite (c) The Apache Software Foundation 2017</copyright>
+    
+	<atom:link href="https://incubator.apache.org/wave/download/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Download | Apache Wave</title>
+      <link>https://incubator.apache.org/wave/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://incubator.apache.org/wave/download/</guid>
+      <description>Downloads Releases There have been no official releases of Apache Wave currently.
+In the meantime, please use the code from source, or refer to our last release candidates (for pre-builds) by checking the wave-dev mailing list archives. The latest release candidate of Wave is 0.4-rc10 (posted on 10 October 2014).
+Once compiled, execute the run-server.sh or run-server.bat to start the Wave server.
+When downloading from a mirror, please be sure to verify the checksums and signature (see the MD5 and PGP links above).</description>
+    </item>
+    
+  </channel>
+</rss>
